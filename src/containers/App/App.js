@@ -1,19 +1,32 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from 'react'
+import { MainLayout } from '../layouts/MainLayout'
+import { HomePage } from '../index'
+import { AdminLayout } from '../layouts/AdminLayout'
+import { Error404 } from '../../components/index'
+import {
+  Route,
+  Switch,
+  BrowserRouter
+} from "react-router-dom"
+import './App.css'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
+      <BrowserRouter>
+        <div className="App">
+          <Switch>
+            <Route exact path="/" component={HomePage}/>
+            <Route path="/home" component={HomePage}/>
+            <Route path="/products" component={MainLayout}/>
+            <Route path="/info" component={MainLayout}/>
+            <Route path="/contacts" component={MainLayout}/>
+            <Route path="/login" component={AdminLayout}/>
+            <Route component={Error404} />
+          </Switch>
+        </div>
+      </BrowserRouter>
+    )
   }
 }
 
