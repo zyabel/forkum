@@ -1,0 +1,9 @@
+.footer {
+  border: 1px solid #e4dede;
+}
+
+.footer .navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

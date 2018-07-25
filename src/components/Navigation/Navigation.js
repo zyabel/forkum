@@ -3,25 +3,37 @@ import { NavLink } from 'react-router-dom'
 
 import './Navigation.css'
 
-const styleActive = {
-  borderBottom:'2px solid #53acff',
-}
+const NAV_LINKS = [
+  {
+    linkName: 'Home',
+    linkPath: '/home',
+  },
+  {
+    linkName: 'Services',
+    linkPath: '/services',
+  },
+  {
+    linkName: 'Catalogue',
+    linkPath: '/products',
+  },
+  {
+    linkName: 'Info&Questions',
+    linkPath: '/info',
+  },
+  {
+    linkName: 'Contacts',
+    linkPath: '/contacts',
+  },
+]
 
-const Navigation = () => {
+const Navigation = (props) => {
   return(
     <nav className='navigation'>
-      <div className='nav-link'>
-        <NavLink activeStyle={styleActive} to='/home'>Home</NavLink>
-      </div>
-      <div className='nav-link'>
-        <NavLink activeStyle={styleActive} to='/products'>Catalogue</NavLink>
-      </div>
-      <div className='nav-link'>
-        <NavLink activeStyle={styleActive} to='/info'>Info&Questions</NavLink>
-      </div>
-      <div className='nav-link'>
-        <NavLink activeStyle={styleActive} to='/contacts'>Contacts</NavLink>
-      </div> 
+      {NAV_LINKS.map((link, i) => 
+        <div key={i} className='nav-link'>
+          <NavLink activeStyle={props.styles} to={link.linkPath}>{link.linkName}</NavLink>
+        </div>
+      )}
     </nav>
   )
 }
