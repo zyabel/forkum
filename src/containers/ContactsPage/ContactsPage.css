@@ -1,0 +1,33 @@
+.contacts-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contacts-wrap h5 {
+  margin-top: 4px;
+  margin-bottom: 7px;
+}
+.contacts-wrap h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.contacts-wrap .jumbotron {
+  width: 45%;
+  border-radius: 5px;
+}
+.contacts-wrap .jumbotron .list-group {
+  margin-bottom: 0px;
+  box-shadow: none;
+}
+.contacts-wrap .list-group .list-group-item{
+  margin-bottom: 13px;
+  padding: 7px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px){
+  .contacts-wrap > .jumbotron {
+    padding: 10px 48px 30px; 
+  }
+}

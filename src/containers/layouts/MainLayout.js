@@ -12,7 +12,7 @@ const styles = {
 export const MainLayout = props => (
   <div style={styles}>
     <Header />
-    <div className='layout-content'>
+    <div className='layout-content' style={{ marginTop: '1em' }}>
       {props.children}
     </div>
     <Footer />
