@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { MainLayout } from '../layouts/MainLayout'
-import { Carousel } from 'react-bootstrap';
+import { Carousel, Image, Jumbotron, Button } from 'react-bootstrap'
 
 const Slides = [
   {
@@ -36,7 +36,14 @@ class HomePage extends Component {
         <Carousel>
           {Slides.map((slide, i) => 
             <Carousel.Item key={i}>
-              <img width={slide.width} height={slide.height} alt={slide.size} src={require(`../../images/${slide.path}`)} />
+              <Image 
+                width={slide.width} 
+                height={slide.height} 
+                alt={slide.size} 
+                src={require(`../../images/${slide.path}`)} 
+                thumbnail
+                responsive
+              />
               <Carousel.Caption>
                 <h3>{slide.title}</h3>
                 <p>{slide.text}</p>
@@ -44,15 +51,32 @@ class HomePage extends Component {
             </Carousel.Item>
           )}
         </Carousel>
-        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-          Laudantium tempore odio, consectetur magnam, quo quia officia, 
-          voluptates similique vero eos possimus dignissimos? Quaerat consectetur odio et deleniti quam? 
-          Porro, molestias! 
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-          Laudantium tempore odio, consectetur magnam, quo quia officia, 
-          voluptates similique vero eos possimus dignissimos? Quaerat consectetur odio et deleniti quam? 
-          Porro, molestias! 
-        </p>
+        <Jumbotron style={{padding: '40px', margin: '20px 0', borderRadius: '10px'}}>
+          <h2>LOREM MEM</h2>
+          <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Laudantium tempore odio, consectetur magnam, quo quia officia, 
+            voluptates similique vero eos possimus dignissimos? Quaerat consectetur odio et deleniti quam? 
+            Porro, molestias! 
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Laudantium tempore odio, consectetur magnam, quo quia officia, 
+            voluptates similique vero eos possimus dignissimos? Quaerat consectetur odio et deleniti quam? 
+            Porro, molestias! 
+          </p>
+          <Button bsStyle="primary">Read more</Button>
+        </Jumbotron>
+        <Jumbotron style={{padding: '40px', margin: '20px 0', borderRadius: '10px'}}>
+          <h2>LOREM MEM</h2>
+          <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Laudantium tempore odio, consectetur magnam, quo quia officia, 
+            voluptates similique vero eos possimus dignissimos? Quaerat consectetur odio et deleniti quam? 
+            Porro, molestias! 
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Laudantium tempore odio, consectetur magnam, quo quia officia, 
+            voluptates similique vero eos possimus dignissimos? Quaerat consectetur odio et deleniti quam? 
+            Porro, molestias! 
+          </p>
+          <Button bsStyle="primary">Read more</Button>
+        </Jumbotron>
       </MainLayout>
     )
   }

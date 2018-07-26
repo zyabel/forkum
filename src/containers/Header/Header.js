@@ -2,17 +2,47 @@ import React from 'react'
 import { Navigation } from '../../components'
 import Logo from '../../images/Creative_Logo.png'
 
-const styleActive = {
-  borderBottom:'2px solid #53acff',
-  color: '#53acff',
+const style = {
+    styleActive :{
+      color: '#fff',
+      background: '#337ab7',
+      borderRadius: '4px',
+    },
+    logo: {
+      margin: '15px',
+      textAlign: 'center',
+    }
 }
 
-const Header = props =>
+const NAV_LINKS = [
+  {
+    linkName: 'Home',
+    linkPath: '/home',
+  },
+  {
+    linkName: 'Services',
+    linkPath: '/services',
+  },
+  {
+    linkName: 'Catalogue',
+    linkPath: '/products',
+  },
+  {
+    linkName: 'Info&Questions',
+    linkPath: '/info',
+  },
+  {
+    linkName: 'Contacts',
+    linkPath: '/contacts',
+  },
+]
+
+const Header = () =>
   <header className='header'>
-    <div className='logo'>
+    <div style={style.logo}>
       <img src={Logo} alt='logo' />
     </div>
-    <Navigation styles={styleActive}/>
+    <Navigation styles={style.styleActive} data={NAV_LINKS}/>
   </header>
 
 export default Header
