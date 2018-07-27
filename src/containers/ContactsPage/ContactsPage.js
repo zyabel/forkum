@@ -3,66 +3,25 @@ import _ from 'lodash'
 import { MainLayout } from '../layouts/MainLayout'
 import { MapComponent } from '../../components/index'
 import { Jumbotron, ListGroup, ListGroupItem, Button } from 'react-bootstrap'
-
-
 import FormField from '../../components/Form/Form'
 
+import { contactsInfo, formInfo } from './data.js'
 import './ContactsPage.css'
 
-const contactsInfo = [
-  {
-    label: 'Address',
-    fieldInfo: 'Some adress',
-  },
-  {
-    label: 'Phone',
-    fieldInfo: 'Some phone',
-  },
-  {
-    label: 'Email',
-    fieldInfo: 'Some email',
-  },
-  {
-    label: 'Skype',
-    fieldInfo: 'Some skype',
-  },
-]
-
-const formInfo = [
-  {
-    label: 'Message',
-    id: 'formControlsTextarea',
-    type: 'textarea',
-    placeholder: 'Enter your message',
-    componentClass: 'textarea',
-  },
-  {
-    label: 'Name',
-    id: 'formControlsText',
-    type: 'text',
-    placeholder: 'Enter your name',
-    componentClass: '',
-  },
-  {
-    label: 'Phone',
-    id: 'formControlsPhone',
-    type: 'tel',
-    placeholder: 'Enter your phone',
-    componentClass: '',
-    help: 'phone format XXX-XXX-XX-XX'
-  },
-  {
-    label: 'Email',
-    id: 'formControlsEmail',
-    type: 'email',
-    placeholder: 'Enter your email',
-    componentClass: '',
-  },
-]
-
 class ContactsPage extends Component {
-  render() {
+  constructor(props, context) {
+    super(props, context)
 
+    this.getValidationSubmit = this.getValidationSubmit.bind(this)
+
+  }
+
+  getValidationSubmit(event) {
+
+  }
+
+  render() {
+    
     return (
       <MainLayout>
         <div className='contacts-wrap'>
@@ -79,8 +38,8 @@ class ContactsPage extends Component {
         </Jumbotron>
         <Jumbotron>  
           <h3>Feedback form</h3>  
-          <form>
-            {_.map(formInfo, (field, i) => <FormField  key={i} data={field}/>)}   
+          <form onSubmit={this.getValidationSubmit}>
+            {_.map(formInfo, (field, i) => <FormField  key={i} data={field} getData={el => {this.textInput = el}} />)}   
             <Button type="submit" bsStyle="primary">Submit</Button>   
           </form>     
         </Jumbotron>
