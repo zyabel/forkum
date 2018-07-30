@@ -36,30 +36,29 @@ class ServicesPage extends Component {
         <Grid>
           {_.map(servicesInfo, (service, i) => 
             <Row  key={service.id} xs={6} md={3}>
-            <Jumbotron>
-            <div className='service-section' style={{display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>
-              <p>{service.shortInfo.text}</p>
-              <Image src={require(`../../images/${service.shortInfo.imageName}`)} alt="image-icon" style={{marginLeft: '30px'}}/>
+              <Jumbotron>
+              <div className='service-section' style={{display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>
+                <p>{service.shortInfo.text}</p>
+                <Image src={require(`../../images/${service.shortInfo.imageName}`)} alt="image-icon" style={{marginLeft: '30px'}}/>
               </div>
-            <Button bsStyle="primary" bsSize="large" onClick={() => this.handleShow(i)}>
-              {service.shortInfo.buttonText}
-            </Button>
-            <Modal show={this.state[i] || false} onHide={() => this.handleClose(i)}>
-            {console.log(this.state.i)}
+              <Button bsStyle="primary" bsSize="large" onClick={() => this.handleShow(i)}>
+                {service.shortInfo.buttonText}
+              </Button>
+              <Modal show={this.state[i] || false} onHide={() => this.handleClose(i)}>
                 <Modal.Header closeButton>
-                  <Modal.Title>{service.modalInfo.title}</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                  {_.map( service.modalInfo.articles,( text, i) => 
-                    <p key={i}>{text}</p>
-                  )}
-                </Modal.Body>
-                <Modal.Footer>
-                  <Button onClick={() => this.handleClose(i)}>Close</Button>
-                </Modal.Footer>
-              </Modal>
-            </Jumbotron>            
-          </Row>
+                    <Modal.Title>{service.modalInfo.title}</Modal.Title>
+                  </Modal.Header>
+                  <Modal.Body>
+                    {_.map( service.modalInfo.articles,( text, i) => 
+                      <p key={i}>{text}</p>
+                    )}
+                  </Modal.Body>
+                  <Modal.Footer>
+                    <Button onClick={() => this.handleClose(i)}>Close</Button>
+                  </Modal.Footer>
+                </Modal>
+              </Jumbotron>            
+            </Row>
           )}
         </Grid>
       </MainLayout>

@@ -4,6 +4,7 @@ import { HomePage } from '../index'
 import { ContactsPage } from '../index'
 import { ServicesPage } from '../index'
 import { AdminLayout } from '../layouts/AdminLayout'
+import { ProductsPage } from '../index'
 import { Error404 } from '../../components/index'
 import {
   Route,
@@ -20,7 +21,7 @@ class App extends Component {
             <Route exact path="/" component={HomePage}/>
             <Route path="/home" component={HomePage}/>
             <Route path="/services" component={ServicesPage}/>
-            <Route path="/products" component={MainLayout}/>
+            <Route path="/products" component={ProductsPage}/>
             <Route path="/info" component={MainLayout}/>
             <Route path="/contacts" component={ContactsPage}/>
             <Route path="/login" component={AdminLayout}/>

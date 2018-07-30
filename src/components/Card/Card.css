@@ -1,0 +1,13 @@
+.jumbotron {
+  padding: 0;
+  background-color: #fff;
+  width: 49%;
+}
+
+.counter-input .form-control {
+  /* your style */
+}
+/* to style buttons use */
+.counter-input .input-group-addon {
+   /* your style */
+}
