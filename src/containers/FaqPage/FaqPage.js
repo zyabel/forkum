@@ -4,6 +4,7 @@ import { MainLayout } from '../layouts/MainLayout'
 import { PanelGroup, Panel, Nav, NavItem, Col } from 'react-bootstrap'
 
 import { FaqData } from './data'
+import './FaqPage.css'
 
 class FaqPage extends Component {
   constructor(props) {
@@ -28,7 +29,7 @@ class FaqPage extends Component {
             <Nav bsStyle="pills" stacked activeKey={`${this.state.selected}`} onSelect={this.handleSelect}>
               {_.map( FaqData,(item) =>               
                 <NavItem  key={item.id} eventKey={`${item.id}`} href={`#${item.id}`}>
-                  {item.sectionName}
+                  <span className='section-name'>{item.sectionName}</span>
                 </NavItem>
               )}
             </Nav>

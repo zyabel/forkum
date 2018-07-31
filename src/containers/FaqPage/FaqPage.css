@@ -1,0 +1,16 @@
+.faq-wrapper h3 {
+  margin-top: 0;
+  color: #fff;
+  background-color: #337ab7;
+  border-radius: 4px;
+  padding: 10px 15px;
+}
+
+li.active .section-name {
+  color: #fff;
+}
+
+.faq-wrapper .section-name {
+  font-size: 17px;
+  color: #000;
+}
