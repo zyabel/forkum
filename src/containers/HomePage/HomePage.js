@@ -31,6 +31,7 @@ const Slides = [
 
 class HomePage extends Component {
   render() {
+    
     return(
       <MainLayout>
         <Carousel>
