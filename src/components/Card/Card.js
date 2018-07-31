@@ -22,7 +22,7 @@ const Card = (props) => {
 
   return (
     <div className='card-wrapper'>
-      <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>  
+      <div className='card'>  
         <Jumbotron>
           <Label>{price}</Label>
           <Tabs defaultActiveKey={1} id="uncontrolled-tab-example">
@@ -35,14 +35,14 @@ const Card = (props) => {
               </ListGroup >
             </Tab>
           </Tabs>
-          <CounterInput value="1" min={1} max={50} onChange={(value) => { console.log(value) }}/>
+          <CounterInput value="1" min={0} max={50} onChange={(value) => { console.log(value) }}/>
           <Button>ADD</Button>
         </Jumbotron>
         <Jumbotron>
           <Carousel>
             {_.map(carousel,(img, i) => 
             <Carousel.Item key={i}>
-              <Image width={250} height={200} alt="250x500" src={require(`../../images/${img}`)} />
+              <Image  src={require(`../../images/${img}`)} />
             </Carousel.Item>
             )}
           </Carousel>
