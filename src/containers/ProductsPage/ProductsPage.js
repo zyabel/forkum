@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 import _ from 'lodash'
 import { MainLayout } from '../layouts/MainLayout'
 import { Card } from '../../components/index'
+import { Pagination } from '../../components/index'
 import { 
   Thumbnail,
   Button,
   Label, 
   Modal,
-  Pagination,
 } from 'react-bootstrap'
 
 import './ProductsPage.css'
@@ -20,8 +20,12 @@ class ProductsPage extends Component {
 
     this.handleShow = this.handleShow.bind(this)
     this.handleClose = this.handleClose.bind(this)
+    this.onChangePage = this.onChangePage.bind(this)
 
-    this.state = {}
+    this.state = {
+      pageItems: cards,
+      pageOfItems: cards,
+    }
   }
 
   handleClose(i) {
@@ -36,12 +40,16 @@ class ProductsPage extends Component {
     this.setState({ ...this.state, newState })
   }
 
+  onChangePage(pageOfItems) {
+    this.setState({ pageOfItems: pageOfItems })
+  }
+
   render() {
 
     return (
       <MainLayout>
         <div className='cards-wrapper'>
-          {_.map(cards, (card, i) => 
+          {_.map(this.state.pageOfItems, (card, i) => 
             <div key={card.id} style={{display: 'flex'}}>  
               <Thumbnail src={require(`../../images/${card.img}`)} alt="image">
                 <h3>{card.title}</h3>
@@ -67,23 +75,7 @@ class ProductsPage extends Component {
 
         </div> 
         <div style={{textAlign: 'center'}}>
-          <Pagination>
-            <Pagination.First />
-            <Pagination.Prev />
-            <Pagination.Item active>{1}</Pagination.Item>
-            <Pagination.Ellipsis />
-
-            <Pagination.Item>{10}</Pagination.Item>
-            <Pagination.Item>{11}</Pagination.Item>
-            <Pagination.Item >{12}</Pagination.Item>
-            <Pagination.Item>{13}</Pagination.Item>
-            <Pagination.Item disabled>{14}</Pagination.Item>
-
-            <Pagination.Ellipsis />
-            <Pagination.Item>{20}</Pagination.Item>
-            <Pagination.Next />
-            <Pagination.Last />
-          </Pagination>
+          <Pagination items={this.state.pageItems} onChangePage={this.onChangePage} />
         </div>
       </MainLayout>
     )
