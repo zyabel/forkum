@@ -17,6 +17,10 @@ import CounterInput from 'react-bootstrap-counter';
 
 import './Card.css';
 
+const counterValue = (value) => {
+  console.log(value);
+};
+
 const Card = (props) => {
   const { price, description, carousel, details } = props;
 
@@ -25,7 +29,7 @@ const Card = (props) => {
       <div className="card">
         <Jumbotron>
           <Label>{price}</Label>
-          <Tabs defaultActiveKey={1} id="uncontrolled-tab-example">
+          {/* <Tabs defaultActiveKey={1} id="uncontrolled-tab-example">
             <Tab eventKey={1} title="Description">
               {description}
             </Tab>
@@ -36,14 +40,12 @@ const Card = (props) => {
                 ))}
               </ListGroup>
             </Tab>
-          </Tabs>
+          </Tabs> */}
           <CounterInput
             value="1"
             min={0}
             max={50}
-            onChange={(value) => {
-              console.log(value);
-            }}
+            onChange={(value) => counterValue(value)}
           />
           <Button>ADD</Button>
         </Jumbotron>

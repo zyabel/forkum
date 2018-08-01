@@ -1,62 +1,75 @@
-import React, { Component } from 'react'
-import _ from 'lodash'
-import { MainLayout } from '../layouts/MainLayout'
-import { PanelGroup, Panel, Nav, NavItem, Col } from 'react-bootstrap'
+import React, { Component } from 'react';
+import _ from 'lodash';
+import { MainLayout } from '../layouts/MainLayout';
+import { PanelGroup, Panel, Nav, NavItem, Col } from 'react-bootstrap';
 
-import { FaqData } from './data'
-import './FaqPage.css'
+import { FaqData } from './data';
+import './FaqPage.css';
 
 class FaqPage extends Component {
   constructor(props) {
-    super(props)
-    this.handleSelect = this.handleSelect.bind(this)
+    super(props);
+    this.handleSelectNav = this.handleSelectNav.bind(this);
+    this.handleSelectPanel = this.handleSelectPanel.bind(this);
 
     this.state = {
       selected: '1',
-    }
+      activeKey: '1',
+    };
   }
 
-  handleSelect(selectedKey) {
-    this.setState({ selected: `${selectedKey}`});
+  handleSelectNav(selectedKey) {
+    this.setState({ selected: `${selectedKey}` });
+  }
+
+  handleSelectPanel(activeKey) {
+    console.log(this.state.activeKey);
+    this.setState({ activeKey });
   }
 
   render() {
-
-    return(
+    return (
       <MainLayout>
-        <div className='faq-wrapper'>
+        <div className="faq-wrapper">
           <Col xs={3} md={3}>
-            <Nav bsStyle="pills" stacked activeKey={`${this.state.selected}`} onSelect={this.handleSelect}>
-              {_.map( FaqData,(item) =>               
-                <NavItem  key={item.id} eventKey={`${item.id}`} href={`#${item.id}`}>
-                  <span className='section-name'>{item.sectionName}</span>
+            <Nav
+              bsStyle="pills"
+              stacked
+              activeKey={`${this.state.selected}`}
+              onSelect={this.handleSelectNav}
+            >
+              {_.map(FaqData, (item) => (
+                <NavItem
+                  key={item.id}
+                  eventKey={`${item.id}`}
+                  href={`#${item.id}`}
+                >
+                  <span className="section-name">{item.sectionName}</span>
                 </NavItem>
-              )}
+              ))}
             </Nav>
           </Col>
           <Col xs={12} md={9}>
-            <div className='faq-section' id={this.state.selected}>
-              {_.map( FaqData,(item, i) =>  
-                <PanelGroup accordion key={i} id={`${i}`}>
+            <div className="faq-section" id={this.state.selected}>
+              {_.map(FaqData, (item, i) => (
+                <div className="section-name" key={i}>
                   <h3>{item.sectionName}</h3>
-                  {_.map( item.questions,(value, i) =>  
-                    <Panel eventKey={i} key={i}>       
-                      <Panel.Heading>
-                        <Panel.Title toggle>{value.label}</Panel.Title>
-                      </Panel.Heading>
-                      <Panel.Body collapsible>
-                        {value.text}
-                      </Panel.Body>                    
-                    </Panel>                                  
-                  )}
-                </PanelGroup>
-              )} 
+                  {_.map(item.questions, (value, i) => (
+                    <section key={i}>
+                      <h4 onClick={() => this.handleSelectPanel(i)}>
+                        {value.label}
+                      </h4>
+                      <p>{value.text}</p>
+                    </section>
+                  ))}
+                </div>
+              ))}
             </div>
-           </Col>
-        </div>        
+          </Col>
+        </div>
       </MainLayout>
-    )    
+    );
   }
 }
 
-export default FaqPage
+export default FaqPage;
