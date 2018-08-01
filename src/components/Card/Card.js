@@ -1,28 +1,28 @@
-import React from 'react'
-import _ from 'lodash'
+import React from 'react';
+import _ from 'lodash';
 
-import { 
-  Tabs, 
+import {
+  Tabs,
   Tab,
-  Image, 
-  Jumbotron, 
+  Image,
+  Jumbotron,
   Button,
-  Carousel, 
-  Label, 
+  Carousel,
+  Label,
   ListGroup,
   ListGroupItem,
-} from 'react-bootstrap'
+} from 'react-bootstrap';
 
-import CounterInput from 'react-bootstrap-counter'
+import CounterInput from 'react-bootstrap-counter';
 
-import './Card.css'
+import './Card.css';
 
 const Card = (props) => {
-  const { price, description, action, carousel, details } = props
+  const { price, description, carousel, details } = props;
 
   return (
-    <div className='card-wrapper'>
-      <div className='card'>  
+    <div className="card-wrapper">
+      <div className="card">
         <Jumbotron>
           <Label>{price}</Label>
           <Tabs defaultActiveKey={1} id="uncontrolled-tab-example">
@@ -30,26 +30,35 @@ const Card = (props) => {
               {description}
             </Tab>
             <Tab eventKey={2} title="Details">
-              <ListGroup>    
-                {_.map(details, (value, key) => <ListGroupItem key={key}>{`${key}: ${value}`}</ListGroupItem>)}                 
-              </ListGroup >
+              <ListGroup>
+                {_.map(details, (value, key) => (
+                  <ListGroupItem key={key}>{`${key}: ${value}`}</ListGroupItem>
+                ))}
+              </ListGroup>
             </Tab>
           </Tabs>
-          <CounterInput value="1" min={0} max={50} onChange={(value) => { console.log(value) }}/>
+          <CounterInput
+            value="1"
+            min={0}
+            max={50}
+            onChange={(value) => {
+              console.log(value);
+            }}
+          />
           <Button>ADD</Button>
         </Jumbotron>
         <Jumbotron>
           <Carousel>
-            {_.map(carousel,(img, i) => 
-            <Carousel.Item key={i}>
-              <Image  src={require(`../../images/${img}`)} />
-            </Carousel.Item>
-            )}
+            {_.map(carousel, (img, i) => (
+              <Carousel.Item key={i}>
+                <Image src={require(`../../images/${img}`)} />
+              </Carousel.Item>
+            ))}
           </Carousel>
-        </Jumbotron>   
-      </div> 
+        </Jumbotron>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;
