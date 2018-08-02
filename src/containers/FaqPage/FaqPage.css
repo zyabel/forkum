@@ -6,6 +6,13 @@
   padding: 10px 15px;
 }
 
+.faq-wrapper .section-name section .label {
+  margin-bottom: 1rem; 
+  padding: 10px 15px; 
+  display: block;
+  font-size: 17px; 
+}
+
 li.active .section-name {
   color: #fff;
 }

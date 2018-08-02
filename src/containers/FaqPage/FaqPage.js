@@ -2,30 +2,24 @@ import React, { Component } from 'react';
 import _ from 'lodash';
 import { MainLayout } from '../layouts/MainLayout';
 import { Nav, NavItem, Col, Label } from 'react-bootstrap';
-import { UncontrolledCollapse, Button, CardBody, Card } from 'reactstrap';
+import { UncontrolledCollapse, CardBody, Card } from 'reactstrap';
 
 import { FaqData } from './data';
+
 import './FaqPage.css';
 
 class FaqPage extends Component {
   constructor(props) {
     super(props);
     this.handleSelectNav = this.handleSelectNav.bind(this);
-    this.handleSelectPanel = this.handleSelectPanel.bind(this);
 
     this.state = {
       selected: '1',
-      activeKey: '1',
     };
   }
 
   handleSelectNav(selectedKey) {
     this.setState({ selected: `${selectedKey}` });
-  }
-
-  handleSelectPanel(activeKey) {
-    console.log(this.state.activeKey);
-    this.setState({ activeKey });
   }
 
   render() {
@@ -51,17 +45,13 @@ class FaqPage extends Component {
             </Nav>
           </Col>
           <Col xs={12} md={9}>
-            <div className="faq-section" id={this.state.selected}>
+            <div className="faq-section">
               {_.map(FaqData, (item, i) => (
-                <div className="section-name" key={i}>
+                <div className="section-name" key={i} id={item.id}>
                   <h3>{item.sectionName}</h3>
                   {_.map(item.questions, (value, index) => (
                     <section key={index}>
-                      <Label
-                        color="primary"
-                        id={`mark${index}${i}`}
-                        style={{ marginBottom: '1rem' }}
-                      >
+                      <Label color="primary" id={`mark${index}${i}`}>
                         {value.label}
                       </Label>
                       <UncontrolledCollapse toggler={`#mark${index}${i}`}>

@@ -29,12 +29,7 @@ module.exports = (env) => {
           },
         },
         {
-          test: /\.css$/,
-          exclude: /node_modules/,
-          loaders: ['style-loader', 'css-loader'],
-        },
-        {
-          test: /\.scss/,
+          test: /\.scss$/,
           use: [
             isCssExtractPlugin,
             {
@@ -53,6 +48,11 @@ module.exports = (env) => {
               loader: 'sass-loader',
             },
           ],
+        },
+        {
+          test: /\.css$/,
+          exclude: /node_modules/,
+          loaders: ['style-loader', 'css-loader'],
         },
         {
           test: /\.(png|svg|jpg|gif)$/,
