@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
 import { MainLayout } from '../layouts/MainLayout';
-import { PanelGroup, Panel, Nav, NavItem, Col } from 'react-bootstrap';
+import { Nav, NavItem, Col, Label } from 'react-bootstrap';
+import { UncontrolledCollapse, Button, CardBody, Card } from 'reactstrap';
 
 import { FaqData } from './data';
 import './FaqPage.css';
@@ -54,12 +55,20 @@ class FaqPage extends Component {
               {_.map(FaqData, (item, i) => (
                 <div className="section-name" key={i}>
                   <h3>{item.sectionName}</h3>
-                  {_.map(item.questions, (value, i) => (
-                    <section key={i}>
-                      <h4 onClick={() => this.handleSelectPanel(i)}>
+                  {_.map(item.questions, (value, index) => (
+                    <section key={index}>
+                      <Label
+                        color="primary"
+                        id={`mark${index}${i}`}
+                        style={{ marginBottom: '1rem' }}
+                      >
                         {value.label}
-                      </h4>
-                      <p>{value.text}</p>
+                      </Label>
+                      <UncontrolledCollapse toggler={`#mark${index}${i}`}>
+                        <Card>
+                          <CardBody>{value.text}</CardBody>
+                        </Card>
+                      </UncontrolledCollapse>
                     </section>
                   ))}
                 </div>

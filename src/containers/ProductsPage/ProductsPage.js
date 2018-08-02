@@ -61,7 +61,7 @@ class ProductsPage extends Component {
             <Modal.Title>{`${card.modal.title}`}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <Card {...card.modal} />
+            <Card {...card} />
           </Modal.Body>
           <Modal.Footer>
             <Button onClick={() => this.handleClose(i)}>Close</Button>

@@ -2,52 +2,31 @@ import React from 'react';
 import _ from 'lodash';
 
 import {
-  Tabs,
-  Tab,
   Image,
   Jumbotron,
-  Button,
   Carousel,
   Label,
   ListGroup,
   ListGroupItem,
 } from 'react-bootstrap';
 
-import CounterInput from 'react-bootstrap-counter';
-
 import './Card.css';
 
-const counterValue = (value) => {
-  console.log(value);
-};
-
 const Card = (props) => {
-  const { price, description, carousel, details } = props;
+  const { price } = props;
+  const { description, carousel, details } = props.modal;
 
   return (
     <div className="card-wrapper">
       <div className="card">
         <Jumbotron>
           <Label>{price}</Label>
-          {/* <Tabs defaultActiveKey={1} id="uncontrolled-tab-example">
-            <Tab eventKey={1} title="Description">
-              {description}
-            </Tab>
-            <Tab eventKey={2} title="Details">
-              <ListGroup>
-                {_.map(details, (value, key) => (
-                  <ListGroupItem key={key}>{`${key}: ${value}`}</ListGroupItem>
-                ))}
-              </ListGroup>
-            </Tab>
-          </Tabs> */}
-          <CounterInput
-            value="1"
-            min={0}
-            max={50}
-            onChange={(value) => counterValue(value)}
-          />
-          <Button>ADD</Button>
+          <p>{description}</p>
+          <ListGroup>
+            {_.map(details, (value, key) => (
+              <ListGroupItem key={key}>{`${key}: ${value}`}</ListGroupItem>
+            ))}
+          </ListGroup>
         </Jumbotron>
         <Jumbotron>
           <Carousel>

@@ -3,7 +3,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
-const path = require('path');
 
 module.exports = (env) => {
   const isCssExtractPlugin = env.mode === 'production'
@@ -102,7 +101,6 @@ module.exports = (env) => {
 
     resolve: {
       alias: {
-        // 'react': resolve(__dirname, '../../node_modules', 'react'),
         Components: resolve(__dirname, 'src/components/'),
         Containers: resolve(__dirname, 'src/containers/'),
         images: resolve(__dirname, 'src/images/'),

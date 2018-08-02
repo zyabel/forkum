@@ -13,12 +13,11 @@ export const cards = [
         Power: '1kW',
         Supply: '220V',
         Type: 'split',
+        Power2: '1kW',
+        Supply2: '220V',
+        Type2: 'split',
       },
-      carousel: [
-        '1303.jpg',
-        '1303.jpg',
-        'p-388-FTXS50L.jpg',
-      ]
+      carousel: ['1303.jpg', '1303.jpg', 'p-388-FTXS50L.jpg'],
     },
   },
   {
@@ -38,11 +37,7 @@ export const cards = [
         Supply: '220V',
         Type: 'split',
       },
-      carousel: [
-        '1303.jpg',
-        '1303.jpg',
-        'p-388-FTXS50L.jpg',
-      ]
+      carousel: ['1303.jpg', '1303.jpg', 'p-388-FTXS50L.jpg'],
     },
   },
   {
@@ -60,11 +55,7 @@ export const cards = [
         Supply: '220V',
         Type: 'split',
       },
-      carousel: [
-        '1303.jpg',
-        '1303.jpg',
-        'p-388-FTXS50L.jpg',
-      ]
+      carousel: ['1303.jpg', '1303.jpg', 'p-388-FTXS50L.jpg'],
     },
   },
   {
@@ -84,11 +75,7 @@ export const cards = [
         Supply: '220V',
         Type: 'split',
       },
-      carousel: [
-        '1303.jpg',
-        '1303.jpg',
-        'p-388-FTXS50L.jpg',
-      ]
+      carousel: ['1303.jpg', '1303.jpg', 'p-388-FTXS50L.jpg'],
     },
   },
   {
@@ -100,17 +87,13 @@ export const cards = [
     dolore eu fugiat nulla pariatur.`,
     modal: {
       title: 'DAIKIN FTXS50L',
-      description: `modal 1`,
+      description: `modal 5`,
       details: {
         Power: '1kW',
         Supply: '220V',
         Type: 'split',
       },
-      carousel: [
-        '1303.jpg',
-        '1303.jpg',
-        'p-388-FTXS50L.jpg',
-      ]
+      carousel: ['1303.jpg', '1303.jpg', 'p-388-FTXS50L.jpg'],
     },
   },
   {
@@ -124,17 +107,13 @@ export const cards = [
     nisi ut aliquip ex ea commodo consequat.`,
     modal: {
       title: 'DAIKIN FTXS50L',
-      description: `modal 2`,
+      description: `modal 6`,
       details: {
         Power: '1kW',
         Supply: '220V',
         Type: 'split',
       },
-      carousel: [
-        '1303.jpg',
-        '1303.jpg',
-        'p-388-FTXS50L.jpg',
-      ]
+      carousel: ['1303.jpg', '1303.jpg', 'p-388-FTXS50L.jpg'],
     },
   },
   {
@@ -146,17 +125,13 @@ export const cards = [
     dolore eu fugiat nulla pariatur.`,
     modal: {
       title: 'DAIKIN FTXS50L',
-      description: `modal 3`,
+      description: `modal7`,
       details: {
         Power: '1kW',
         Supply: '220V',
         Type: 'split',
       },
-      carousel: [
-        '1303.jpg',
-        '1303.jpg',
-        'p-388-FTXS50L.jpg',
-      ]
+      carousel: ['1303.jpg', '1303.jpg', 'p-388-FTXS50L.jpg'],
     },
   },
   {
@@ -170,17 +145,13 @@ export const cards = [
     nisi ut aliquip ex ea commodo consequat.`,
     modal: {
       title: 'DAIKIN FTXS50L',
-      description: `modal 4`,
+      description: `modal 8`,
       details: {
         Power: '1kW',
         Supply: '220V',
         Type: 'split',
       },
-      carousel: [
-        '1303.jpg',
-        '1303.jpg',
-        'p-388-FTXS50L.jpg',
-      ]
+      carousel: ['1303.jpg', '1303.jpg', 'p-388-FTXS50L.jpg'],
     },
   },
   {
@@ -192,17 +163,13 @@ export const cards = [
     dolore eu fugiat nulla pariatur.`,
     modal: {
       title: 'DAIKIN FTXS50L',
-      description: `modal 1`,
+      description: `modal 9`,
       details: {
         Power: '1kW',
         Supply: '220V',
         Type: 'split',
       },
-      carousel: [
-        '1303.jpg',
-        '1303.jpg',
-        'p-388-FTXS50L.jpg',
-      ]
+      carousel: ['1303.jpg', '1303.jpg', 'p-388-FTXS50L.jpg'],
     },
   },
   {
@@ -222,11 +189,7 @@ export const cards = [
         Supply: '220V',
         Type: 'split',
       },
-      carousel: [
-        '1303.jpg',
-        '1303.jpg',
-        'p-388-FTXS50L.jpg',
-      ]
+      carousel: ['1303.jpg', '1303.jpg', 'p-388-FTXS50L.jpg'],
     },
   },
   {
@@ -244,11 +207,7 @@ export const cards = [
         Supply: '220V',
         Type: 'split',
       },
-      carousel: [
-        '1303.jpg',
-        '1303.jpg',
-        'p-388-FTXS50L.jpg',
-      ]
+      carousel: ['1303.jpg', '1303.jpg', 'p-388-FTXS50L.jpg'],
     },
   },
   {
@@ -268,11 +227,7 @@ export const cards = [
         Supply: '220V',
         Type: 'split',
       },
-      carousel: [
-        '1303.jpg',
-        '1303.jpg',
-        'p-388-FTXS50L.jpg',
-      ]
+      carousel: ['1303.jpg', '1303.jpg', 'p-388-FTXS50L.jpg'],
     },
   },
   {
@@ -290,11 +245,7 @@ export const cards = [
         Supply: '220V',
         Type: 'split',
       },
-      carousel: [
-        '1303.jpg',
-        '1303.jpg',
-        'p-388-FTXS50L.jpg',
-      ]
+      carousel: ['1303.jpg', '1303.jpg', 'p-388-FTXS50L.jpg'],
     },
   },
   {
@@ -314,11 +265,7 @@ export const cards = [
         Supply: '220V',
         Type: 'split',
       },
-      carousel: [
-        '1303.jpg',
-        '1303.jpg',
-        'p-388-FTXS50L.jpg',
-      ]
+      carousel: ['1303.jpg', '1303.jpg', 'p-388-FTXS50L.jpg'],
     },
   },
   {
@@ -336,11 +283,7 @@ export const cards = [
         Supply: '220V',
         Type: 'split',
       },
-      carousel: [
-        '1303.jpg',
-        '1303.jpg',
-        'p-388-FTXS50L.jpg',
-      ]
+      carousel: ['1303.jpg', '1303.jpg', 'p-388-FTXS50L.jpg'],
     },
   },
   {
@@ -360,11 +303,7 @@ export const cards = [
         Supply: '220V',
         Type: 'split',
       },
-      carousel: [
-        '1303.jpg',
-        '1303.jpg',
-        'p-388-FTXS50L.jpg',
-      ]
+      carousel: ['1303.jpg', '1303.jpg', 'p-388-FTXS50L.jpg'],
     },
   },
-]
+];
