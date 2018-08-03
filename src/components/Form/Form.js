@@ -6,53 +6,18 @@ import {
   HelpBlock,
 } from 'react-bootstrap';
 
+import getValidationState from '../../utils/getValidationState';
+
 class FormField extends Component {
   constructor(props, context) {
     super(props, context);
 
     this.handleChange = this.handleChange.bind(this);
-    this.getValidationState = this.getValidationState.bind(this);
 
     this.state = {
       value: '',
       type: '',
     };
-  }
-
-  getValidationState() {
-    const length = this.state.value.length;
-
-    switch (this.state.type) {
-      case 'textarea':
-        if (length > 10) {
-          return 'success';
-        } else {
-          return 'error';
-        }
-      case 'text':
-        let text = /^[A-Za-z0-9_]+$/;
-        if (text.test(this.state.value)) {
-          return 'success';
-        } else {
-          return 'error';
-        }
-      case 'tel':
-        let tel = /^\+?[0-9]{3}-?[0-9]{6,12}$/;
-        if (tel.test(this.state.value)) {
-          return 'success';
-        } else {
-          return 'error';
-        }
-      case 'email':
-        let email = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        if (email.test(this.state.value)) {
-          return 'success';
-        } else {
-          return 'error';
-        }
-      default:
-        return null;
-    }
   }
 
   handleChange(e) {
@@ -73,7 +38,7 @@ class FormField extends Component {
     return (
       <FormGroup
         controlId={id}
-        validationState={this.getValidationState()}
+        validationState={getValidationState(this.state.type, this.state.value)}
         label={label}
       >
         <ControlLabel>{label}</ControlLabel>
@@ -86,7 +51,7 @@ class FormField extends Component {
           inputRef={getData}
         />
         <FormControl.Feedback />
-        {this.getValidationState() === 'error' ? (
+        {getValidationState(this.state.type, this.state.value) === 'error' ? (
           <HelpBlock>{help}</HelpBlock>
         ) : null}
       </FormGroup>

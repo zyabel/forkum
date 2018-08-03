@@ -3,7 +3,7 @@ import _ from 'lodash';
 import { MainLayout } from '../layouts/MainLayout';
 import { Modal, Image, Jumbotron, Button, Grid, Row } from 'react-bootstrap';
 
-import './ServicesPage.css';
+import './ServicesPage.scss';
 
 import { servicesInfo } from './data.js';
 
