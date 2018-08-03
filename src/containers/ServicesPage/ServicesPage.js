@@ -36,21 +36,13 @@ class ServicesPage extends Component {
           {_.map(servicesInfo, (service, i) => (
             <Row key={service.id} xs={6} md={3}>
               <Jumbotron>
-                <div
-                  className="service-section"
-                  style={{
-                    display: 'flex',
-                    flexDirection: 'row',
-                    justifyContent: 'flex-end',
-                  }}
-                >
+                <div className="service-section">
                   <p>{service.shortInfo.text}</p>
                   <Image
                     src={require(`../../images/medium icon/${
                       service.shortInfo.imageName
                     }`)}
                     alt="image-icon"
-                    style={{ marginLeft: '30px' }}
                   />
                 </div>
                 <Button
