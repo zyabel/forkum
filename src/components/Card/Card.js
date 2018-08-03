@@ -10,7 +10,7 @@ import {
   ListGroupItem,
 } from 'react-bootstrap';
 
-import './Card.css';
+import './Card.scss';
 
 const Card = (props) => {
   const { price } = props;

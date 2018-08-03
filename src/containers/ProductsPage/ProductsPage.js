@@ -5,7 +5,7 @@ import { Card } from '../../components/index';
 import { Pagination } from '../../components/index';
 import { Thumbnail, Button, Label, Modal } from 'react-bootstrap';
 
-import './ProductsPage.css';
+import './ProductsPage.scss';
 
 import { cards } from './data.js';
 
