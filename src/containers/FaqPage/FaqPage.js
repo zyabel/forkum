@@ -6,7 +6,7 @@ import { UncontrolledCollapse, CardBody, Card } from 'reactstrap';
 
 import { FaqData } from './data';
 
-import './FaqPage.css';
+import './FaqPage.scss';
 
 class FaqPage extends Component {
   constructor(props) {

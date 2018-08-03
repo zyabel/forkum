@@ -4,14 +4,14 @@ export const FaqData = [
     sectionName: 'Section name',
     questions: [
       {
-        label: 'Question #1',
+        label: 'Question #1 about something ',
         text: `Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
         richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
         dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
         moon tempor`,
       },
       {
-        label: 'Question #2',
+        label: 'Question #2 about something',
         text: `                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
         richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
         dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
@@ -23,7 +23,7 @@ export const FaqData = [
         labore sustainable VHS.`,
       },
       {
-        label: 'Question #3',
+        label: 'Question #3 about something',
         text: `Leggings occaecat craft beer farm-to-table, raw denim
         aesthetic synth nesciunt you probably haven't heard of them accusamus
         labore sustainable VHS.
@@ -38,14 +38,14 @@ export const FaqData = [
     sectionName: 'Section name 2',
     questions: [
       {
-        label: 'Question #1',
+        label: 'Question #1 about something',
         text: `Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
         richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
         dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
         moon tempor`,
       },
       {
-        label: 'Question #2',
+        label: 'Question #2 about something',
         text: `                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
         richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
         dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
@@ -63,14 +63,14 @@ export const FaqData = [
     sectionName: 'Section name 3',
     questions: [
       {
-        label: 'Question #1',
+        label: 'Question #1 about something',
         text: `Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
         richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
         dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
         moon tempor`,
       },
       {
-        label: 'Question #2',
+        label: 'Question #2 about something',
         text: `                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
         richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
         dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
@@ -82,7 +82,7 @@ export const FaqData = [
         labore sustainable VHS.`,
       },
       {
-        label: 'Question #3',
+        label: 'Question #3 about something',
         text: `Leggings occaecat craft beer farm-to-table, raw denim
         aesthetic synth nesciunt you probably haven't heard of them accusamus
         labore sustainable VHS.
@@ -91,14 +91,14 @@ export const FaqData = [
         labore sustainable VHS.`,
       },
       {
-        label: 'Question #4',
+        label: 'Question #4 about something',
         text: `Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
         richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
         dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
         moon tempor`,
       },
       {
-        label: 'Question #5',
+        label: 'Question #5 about something',
         text: `                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
         richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
         dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
@@ -110,7 +110,7 @@ export const FaqData = [
         labore sustainable VHS.`,
       },
       {
-        label: 'Question #6',
+        label: 'Question #6 about something',
         text: `Leggings occaecat craft beer farm-to-table, raw denim
         aesthetic synth nesciunt you probably haven't heard of them accusamus
         labore sustainable VHS.
@@ -120,4 +120,4 @@ export const FaqData = [
       },
     ],
   },
-]
+];
