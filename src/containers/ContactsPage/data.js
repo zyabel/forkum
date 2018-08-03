@@ -51,3 +51,9 @@ export const formInfo = [
     help: 'Email not valid',
   },
 ];
+
+export const coordinates = {
+  lat: 49.987,
+  lng: 36.238,
+  zoom: 13,
+};

@@ -1,5 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
+import PropTypes from 'prop-types';
 
 import {
   Image,
@@ -24,7 +25,7 @@ const Card = (props) => {
           <p>{description}</p>
           <ListGroup>
             {_.map(details, (value, key) => (
-              <ListGroupItem key={key}>{`${key}: ${value}`}</ListGroupItem>
+              <ListGroupItem key={id}>{`${key}: ${value}`}</ListGroupItem>
             ))}
           </ListGroup>
         </Jumbotron>
@@ -40,6 +41,15 @@ const Card = (props) => {
       </div>
     </div>
   );
+};
+
+Card.propTypes = {
+  id: PropTypes.number,
+  price: PropTypes.string,
+  description: PropTypes.string,
+  carousel: PropTypes.array,
+  details: PropTypes.object,
+  img: PropTypes.string,
 };
 
 export default Card;

@@ -1,6 +1,6 @@
 export const cards = [
   {
-    id: '1',
+    id: 1,
     img: '1303.jpg',
     title: 'DAIKIN FTXS50L',
     price: '400 Euro',
@@ -21,7 +21,7 @@ export const cards = [
     },
   },
   {
-    id: '2',
+    id: 2,
     img: 'p-388-FTXS50L.jpg',
     title: 'DAIKIN FTXS50L',
     price: '400 Euro',
@@ -41,7 +41,7 @@ export const cards = [
     },
   },
   {
-    id: '3',
+    id: 3,
     img: '1303.jpg',
     title: 'DAIKIN FTYS25',
     price: '400 Euro',
@@ -59,7 +59,7 @@ export const cards = [
     },
   },
   {
-    id: '4',
+    id: 4,
     img: 'p-388-FTXS50L.jpg',
     title: 'DAIKIN FTXS50L',
     price: '400 Euro',
@@ -79,7 +79,7 @@ export const cards = [
     },
   },
   {
-    id: '5',
+    id: 5,
     img: '1303.jpg',
     title: 'DAIKIN FTXS50L',
     price: '400 Euro',
@@ -97,7 +97,7 @@ export const cards = [
     },
   },
   {
-    id: '6',
+    id: 6,
     img: 'p-388-FTXS50L.jpg',
     title: 'DAIKIN FTXS50L',
     price: '400 Euro',
@@ -117,7 +117,7 @@ export const cards = [
     },
   },
   {
-    id: '7',
+    id: 7,
     img: '1303.jpg',
     title: 'DAIKIN FTYS25',
     price: '400 Euro',
@@ -135,7 +135,7 @@ export const cards = [
     },
   },
   {
-    id: '8',
+    id: 8,
     img: 'p-388-FTXS50L.jpg',
     title: 'DAIKIN FTXS50L',
     price: '400 Euro',
@@ -155,7 +155,7 @@ export const cards = [
     },
   },
   {
-    id: '9',
+    id: 9,
     img: '1303.jpg',
     title: 'DAIKIN FTXS50L',
     price: '400 Euro',
@@ -173,7 +173,7 @@ export const cards = [
     },
   },
   {
-    id: '10',
+    id: 10,
     img: 'p-388-FTXS50L.jpg',
     title: 'DAIKIN FTXS50L',
     price: '400 Euro',
@@ -193,7 +193,7 @@ export const cards = [
     },
   },
   {
-    id: '11',
+    id: 11,
     img: '1303.jpg',
     title: 'DAIKIN FTYS25',
     price: '400 Euro',
@@ -211,7 +211,7 @@ export const cards = [
     },
   },
   {
-    id: '12',
+    id: 12,
     img: 'p-388-FTXS50L.jpg',
     title: 'DAIKIN FTXS50L',
     price: '400 Euro',
@@ -231,7 +231,7 @@ export const cards = [
     },
   },
   {
-    id: '13',
+    id: 13,
     img: '1303.jpg',
     title: 'DAIKIN FTXS50L',
     price: '400 Euro',
@@ -249,7 +249,7 @@ export const cards = [
     },
   },
   {
-    id: '14',
+    id: 14,
     img: 'p-388-FTXS50L.jpg',
     title: 'DAIKIN FTXS50L',
     price: '400 Euro',
@@ -269,7 +269,7 @@ export const cards = [
     },
   },
   {
-    id: '15',
+    id: 15,
     img: '1303.jpg',
     title: 'DAIKIN FTYS25',
     price: '400 Euro',
@@ -287,7 +287,7 @@ export const cards = [
     },
   },
   {
-    id: '16',
+    id: 16,
     img: 'p-388-FTXS50L.jpg',
     title: 'DAIKIN FTXS50L',
     price: '400 Euro',
@@ -307,7 +307,7 @@ export const cards = [
     },
   },
   {
-    id: '101',
+    id: 101,
     img: '1303.jpg',
     title: 'DAIKIN FTXS50L',
     price: '400 Euro',
@@ -328,7 +328,7 @@ export const cards = [
     },
   },
   {
-    id: '102',
+    id: 102,
     img: 'p-388-FTXS50L.jpg',
     title: 'DAIKIN FTXS50L',
     price: '400 Euro',
@@ -348,7 +348,7 @@ export const cards = [
     },
   },
   {
-    id: '103',
+    id: 103,
     img: '1303.jpg',
     title: 'DAIKIN FTYS25',
     price: '400 Euro',
@@ -366,7 +366,7 @@ export const cards = [
     },
   },
   {
-    id: '104',
+    id: 104,
     img: 'p-388-FTXS50L.jpg',
     title: 'DAIKIN FTXS50L',
     price: '400 Euro',
@@ -386,7 +386,7 @@ export const cards = [
     },
   },
   {
-    id: '105',
+    id: 105,
     img: '1303.jpg',
     title: 'DAIKIN FTXS50L',
     price: '400 Euro',
@@ -404,7 +404,7 @@ export const cards = [
     },
   },
   {
-    id: '106',
+    id: 106,
     img: 'p-388-FTXS50L.jpg',
     title: 'DAIKIN FTXS50L',
     price: '400 Euro',
@@ -424,7 +424,7 @@ export const cards = [
     },
   },
   {
-    id: '107',
+    id: 107,
     img: '1303.jpg',
     title: 'DAIKIN FTYS25',
     price: '400 Euro',
@@ -442,7 +442,7 @@ export const cards = [
     },
   },
   {
-    id: '108',
+    id: 108,
     img: 'p-388-FTXS50L.jpg',
     title: 'DAIKIN FTXS50L',
     price: '400 Euro',
@@ -462,7 +462,7 @@ export const cards = [
     },
   },
   {
-    id: '109',
+    id: 109,
     img: '1303.jpg',
     title: 'DAIKIN FTXS50L',
     price: '400 Euro',
@@ -480,7 +480,7 @@ export const cards = [
     },
   },
   {
-    id: '110',
+    id: 110,
     img: 'p-388-FTXS50L.jpg',
     title: 'DAIKIN FTXS50L',
     price: '400 Euro',
@@ -500,25 +500,7 @@ export const cards = [
     },
   },
   {
-    id: '111',
-    img: '1303.jpg',
-    title: 'DAIKIN FTYS25',
-    price: '400 Euro',
-    description: `Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-    dolore eu fugiat nulla pariatur.`,
-    modal: {
-      title: 'DAIKIN FTXS50L',
-      description: `modal 3`,
-      details: {
-        Power: '1kW',
-        Supply: '220V',
-        Type: 'split',
-      },
-      carousel: ['1303.jpg', '1303.jpg', 'p-388-FTXS50L.jpg'],
-    },
-  },
-  {
-    id: '112',
+    id: 112,
     img: 'p-388-FTXS50L.jpg',
     title: 'DAIKIN FTXS50L',
     price: '400 Euro',
@@ -538,7 +520,7 @@ export const cards = [
     },
   },
   {
-    id: '113',
+    id: 113,
     img: '1303.jpg',
     title: 'DAIKIN FTXS50L',
     price: '400 Euro',
@@ -556,7 +538,7 @@ export const cards = [
     },
   },
   {
-    id: '114',
+    id: 114,
     img: 'p-388-FTXS50L.jpg',
     title: 'DAIKIN FTXS50L',
     price: '400 Euro',
@@ -576,7 +558,7 @@ export const cards = [
     },
   },
   {
-    id: '115',
+    id: 115,
     img: '1303.jpg',
     title: 'DAIKIN FTYS25',
     price: '400 Euro',
@@ -594,7 +576,7 @@ export const cards = [
     },
   },
   {
-    id: '116',
+    id: 116,
     img: 'p-388-FTXS50L.jpg',
     title: 'DAIKIN FTXS50L',
     price: '400 Euro',

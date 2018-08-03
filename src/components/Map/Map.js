@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import icon from 'leaflet/dist/images/marker-icon.png';
@@ -10,23 +11,21 @@ let DefaultIcon = L.icon({
   iconUrl: icon,
   shadowUrl: iconShadow,
 });
-export default class MapComponent extends Component {
-  state = {
-    lat: 49.987,
-    lng: 36.238,
-    zoom: 13,
+class MapComponent extends Component {
+  static propTypes = {
+    data: PropTypes.object,
   };
 
   render() {
-    const position = [this.state.lat, this.state.lng];
+    const { lat, lng, zoom } = this.props.data;
 
     return (
-      <Map center={position} zoom={this.state.zoom}>
+      <Map center={[lat, lng]} zoom={zoom}>
         <TileLayer
           attribution="&amp;copy <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Marker position={position} icon={DefaultIcon}>
+        <Marker position={[lat, lng]} icon={DefaultIcon}>
           <Popup>
             A pretty CSS3 popup. <br /> Easily customizable.
           </Popup>
@@ -35,3 +34,5 @@ export default class MapComponent extends Component {
     );
   }
 }
+
+export default MapComponent;

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
+import PropTypes from 'prop-types';
 import { MainLayout } from '../layouts/MainLayout';
 import { MapComponent } from '../../components/index';
 import { Jumbotron, ListGroup, ListGroupItem, Button } from 'react-bootstrap';
 import FormField from '../../components/Form/Form';
 
-import { contactsInfo, formInfo } from './data.js';
+import { contactsInfo, formInfo, coordinates } from './data.js';
 import './ContactsPage.scss';
 
 class ContactsPage extends Component {
@@ -14,6 +15,12 @@ class ContactsPage extends Component {
 
     this.getValidationSubmit = this.getValidationSubmit.bind(this);
   }
+
+  static propTypes = {
+    contactsInfo: PropTypes.array,
+    formInfo: PropTypes.array,
+    data: PropTypes.object,
+  };
 
   getValidationSubmit() {
     console.log('back-end validation');
@@ -54,7 +61,7 @@ class ContactsPage extends Component {
             </form>
           </Jumbotron>
         </div>
-        <MapComponent />
+        <MapComponent data={coordinates} />
       </MainLayout>
     );
   }
