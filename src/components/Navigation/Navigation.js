@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import { NavLink } from 'react-router-dom';
 
 import style from './Navigation.scss';
@@ -17,6 +19,11 @@ const Navigation = (props) => {
       ))}
     </nav>
   );
+};
+
+Navigation.propTypes = {
+  data: PropTypes.array,
+  styles: PropTypes.object,
 };
 
 export default Navigation;

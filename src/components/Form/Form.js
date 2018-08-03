@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import {
   ControlLabel,
   FormControl,
@@ -20,8 +21,21 @@ class FormField extends Component {
     };
   }
 
+  static propTypes = {
+    id: PropTypes.string,
+    label: PropTypes.string,
+    type: PropTypes.string,
+    placeholder: PropTypes.string,
+    componentClass: PropTypes.string,
+    help: PropTypes.string,
+    getData: PropTypes.func,
+  };
+
   handleChange(e) {
-    this.setState({ type: e.target.type, value: e.target.value });
+    this.setState({
+      type: e.target.type,
+      value: e.target.value,
+    });
   }
 
   render() {
