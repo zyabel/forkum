@@ -7,26 +7,18 @@ import { Carousel, Image, Jumbotron, Button } from 'react-bootstrap';
 import { MainLayout } from '../layouts/MainLayout';
 import { Spinner } from '../../components';
 
-import {
-  pageHomeDataSuccess,
-  pageHomeDataRequest,
-  pageHomeDataFailure,
-} from '../../redux/actions';
+import { pageHomeDataRequest } from '../../redux/actions';
 
 class HomePage extends Component {
   static propTypes = {
     data: PropTypes.array,
     spinner: PropTypes.bool,
     error: PropTypes.bool,
-    pageHomeDataSuccess: PropTypes.func,
     pageHomeDataRequest: PropTypes.func,
-    pageHomeDataFailure: PropTypes.func,
   };
 
   componentDidMount() {
-    setTimeout(() => {
-      return this.props.pageHomeDataSuccess();
-    }, 3000);
+    return this.props.pageHomeDataRequest();
   }
 
   render() {
@@ -60,7 +52,9 @@ class HomePage extends Component {
             </Carousel.Item>
           ))}
         </Carousel>
-        <Jumbotron style={{ padding: '40px ', borderRadius: '10px' }}>
+        <Jumbotron
+          style={{ padding: '40px', margin: '20px 0', borderRadius: '10px' }}
+        >
           <h2>LOREM MEM</h2>
           <p>
             {' '}
@@ -117,21 +111,15 @@ class HomePage extends Component {
 const mapStateToProps = (state) => {
   return {
     data: state.pageHome.data,
-    spinner: state.pageHome.spinner,
+    // spinner: state.pageHome.spinner,
     error: state.pageHome.error,
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    pageHomeDataSuccess: (data) => {
-      dispatch(pageHomeDataSuccess(data));
-    },
     pageHomeDataRequest: () => {
       dispatch(pageHomeDataRequest());
-    },
-    pageHomeDataFailure: () => {
-      dispatch(pageHomeDataFailure());
     },
   };
 };
