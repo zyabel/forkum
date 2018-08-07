@@ -50,7 +50,7 @@ Card.propTypes = {
   carousel: PropTypes.array,
   details: PropTypes.object,
   img: PropTypes.string,
-  modal: PropTypes.array,
+  modal: PropTypes.object,
 };
 
 export default Card;

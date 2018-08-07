@@ -14,14 +14,14 @@ import {
 } from '../../redux/actions';
 
 class HomePage extends Component {
-  // static propTypes = {
-  //   data: PropTypes.array,
-  //   spinner: PropTypes.bool,
-  //   error: PropTypes.bool,
-  //   pageHomeDataSuccess: PropTypes.func,
-  //   pageHomeDataRequest: PropTypes.func,
-  //   pageHomeDataFailure: PropTypes.func,
-  // };
+  static propTypes = {
+    data: PropTypes.array,
+    spinner: PropTypes.bool,
+    error: PropTypes.bool,
+    pageHomeDataSuccess: PropTypes.func,
+    pageHomeDataRequest: PropTypes.func,
+    pageHomeDataFailure: PropTypes.func,
+  };
 
   componentDidMount() {
     setTimeout(() => {
