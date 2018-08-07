@@ -24,18 +24,22 @@ const Card = (props) => {
           <Label>{price}</Label>
           <p>{description}</p>
           <ListGroup>
-            {_.map(details, (value, key) => (
-              <ListGroupItem key={key}>{`${key}: ${value}`}</ListGroupItem>
-            ))}
+            {_.map(details, (value, key) => {
+              return (
+                <ListGroupItem key={key}>{`${key}: ${value}`}</ListGroupItem>
+              );
+            })}
           </ListGroup>
         </Jumbotron>
         <Jumbotron>
           <Carousel>
-            {_.map(carousel, (img, i) => (
-              <Carousel.Item key={i}>
-                <Image src={require(`../../images/${img}`)} />
-              </Carousel.Item>
-            ))}
+            {_.map(carousel, (img, i) => {
+              return (
+                <Carousel.Item key={i}>
+                  <Image src={require(`../../images/${img}`)} />
+                </Carousel.Item>
+              );
+            })}
           </Carousel>
         </Jumbotron>
       </div>

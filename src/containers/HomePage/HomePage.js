@@ -12,7 +12,6 @@ import { pageHomeDataRequest } from '../../redux/actions';
 class HomePage extends Component {
   static propTypes = {
     data: PropTypes.array,
-    spinner: PropTypes.bool,
     error: PropTypes.bool,
     pageHomeDataRequest: PropTypes.func,
   };
@@ -21,36 +20,28 @@ class HomePage extends Component {
     return this.props.pageHomeDataRequest();
   }
 
-  render() {
-    return this.props.data ? (
-      this.renderContent()
-    ) : this.props.error ? (
-      this.renderErrorMessage()
-    ) : (
-      <Spinner />
-    );
-  }
-
   renderContent = () => {
     return (
       <MainLayout>
         <Carousel>
-          {this.props.data.map((slide, i) => (
-            <Carousel.Item key={i}>
-              <Image
-                width={slide.width}
-                height={slide.height}
-                alt={slide.size}
-                src={require(`../../images/${slide.path}`)}
-                thumbnail
-                responsive
-              />
-              <Carousel.Caption>
-                <h3>{slide.title}</h3>
-                <p>{slide.text}</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-          ))}
+          {this.props.data.map((slide, i) => {
+            return (
+              <Carousel.Item key={i}>
+                <Image
+                  width={slide.width}
+                  height={slide.height}
+                  alt={slide.size}
+                  src={require(`../../images/${slide.path}`)}
+                  thumbnail
+                  responsive
+                />
+                <Carousel.Caption>
+                  <h3>{slide.title}</h3>
+                  <p>{slide.text}</p>
+                </Carousel.Caption>
+              </Carousel.Item>
+            );
+          })}
         </Carousel>
         <Jumbotron
           style={{ padding: '40px', margin: '20px 0', borderRadius: '10px' }}
@@ -106,12 +97,19 @@ class HomePage extends Component {
       </div>
     );
   };
+
+  renderSpinner = () => {
+    return this.props.error ? this.renderErrorMessage() : <Spinner />;
+  };
+
+  render() {
+    return this.props.data ? this.renderContent() : this.renderSpinner();
+  }
 }
 
 const mapStateToProps = (state) => {
   return {
     data: state.pageHome.data,
-    // spinner: state.pageHome.spinner,
     error: state.pageHome.error,
   };
 };

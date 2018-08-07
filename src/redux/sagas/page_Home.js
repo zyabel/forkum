@@ -9,6 +9,7 @@ import Api from '../Api';
 function* pageHomeGetDataAsync(action) {
   try {
     const pageData = yield call(Api.dataLocalHomePage);
+
     yield put({ type: PAGE_HOME_GETDATA_SUCCESS, payload: pageData });
   } catch (e) {
     yield put({ type: PAGE_HOME_GETDATA_FAILURE });
