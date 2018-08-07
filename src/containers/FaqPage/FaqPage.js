@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
-import { MainLayout } from '../layouts/MainLayout';
 import { Nav, NavItem, Col, Label } from 'react-bootstrap';
+
 import { UncontrolledCollapse, CardBody, Card } from 'reactstrap';
+import { MainLayout } from '../layouts/MainLayout';
 
 import { FaqData } from './data';
 
@@ -33,36 +34,40 @@ class FaqPage extends Component {
               activeKey={`${this.state.selected}`}
               onSelect={this.handleSelectNav}
             >
-              {_.map(FaqData, (item) => (
-                <NavItem
-                  key={item.id}
-                  eventKey={`${item.id}`}
-                  href={`#${item.id}`}
-                >
-                  <span className="section-name">{item.sectionName}</span>
-                </NavItem>
-              ))}
+              {_.map(FaqData, (item) => {
+                return (
+                  <NavItem
+                    key={item.id}
+                    eventKey={`${item.id}`}
+                    href={`#${item.id}`}
+                  >
+                    <span className="section-name">{item.sectionName}</span>
+                  </NavItem>
+                );
+              })}
             </Nav>
           </Col>
           <Col xs={12} md={9}>
             <div className="faq-section">
-              {_.map(FaqData, (item, i) => (
-                <div className="section-name" key={i} id={item.id}>
-                  <h3>{item.sectionName}</h3>
-                  {_.map(item.questions, (value, index) => (
-                    <section key={index}>
-                      <Label color="primary" id={`mark${index}${i}`}>
-                        {value.label}
-                      </Label>
-                      <UncontrolledCollapse toggler={`#mark${index}${i}`}>
-                        <Card>
-                          <CardBody>{value.text}</CardBody>
-                        </Card>
-                      </UncontrolledCollapse>
-                    </section>
-                  ))}
-                </div>
-              ))}
+              {_.map(FaqData, (item, i) => {
+                return (
+                  <div className="section-name" key={i} id={item.id}>
+                    <h3>{item.sectionName}</h3>
+                    {_.map(item.questions, (value, index) => (
+                      <section key={index}>
+                        <Label color="primary" id={`mark${index}${i}`}>
+                          {value.label}
+                        </Label>
+                        <UncontrolledCollapse toggler={`#mark${index}${i}`}>
+                          <Card>
+                            <CardBody>{value.text}</CardBody>
+                          </Card>
+                        </UncontrolledCollapse>
+                      </section>
+                    ))}
+                  </div>
+                );
+              })}
             </div>
           </Col>
         </div>
