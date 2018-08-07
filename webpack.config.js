@@ -12,7 +12,7 @@ module.exports = (env) => {
 
   const config = {
     mode: env.mode,
-    entry: './src/index.js',
+    entry: ['babel-polyfill', './src/index.js'],
     output: {
       path: resolve(__dirname, 'dist'),
       filename: 'bundle.js',
@@ -82,7 +82,7 @@ module.exports = (env) => {
     devServer: {
       compress: true,
       open: true,
-      port: 6289,
+      port: 9000,
       historyApiFallback: true,
       hot: true,
       progress: true,

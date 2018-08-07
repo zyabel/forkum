@@ -25,7 +25,7 @@ const Card = (props) => {
           <p>{description}</p>
           <ListGroup>
             {_.map(details, (value, key) => (
-              <ListGroupItem key={id}>{`${key}: ${value}`}</ListGroupItem>
+              <ListGroupItem key={key}>{`${key}: ${value}`}</ListGroupItem>
             ))}
           </ListGroup>
         </Jumbotron>
