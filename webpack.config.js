@@ -82,7 +82,7 @@ module.exports = (env) => {
     devServer: {
       compress: true,
       open: true,
-      port: 6289,
+      port: 9000,
       historyApiFallback: true,
       hot: true,
       progress: true,

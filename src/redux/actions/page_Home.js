@@ -1,18 +1,18 @@
 import {
-  PAGE_HOME_GETDATA_FAILURE,
-  PAGE_HOME_GETDATA_REQUEST,
   PAGE_HOME_GETDATA_SUCCESS,
+  PAGE_HOME_GETDATA_REQUEST,
+  PAGE_HOME_GETDATA_FAILURE,
 } from '../constants';
 
-export const homePageDataFail = () => ({
-  type: PAGE_HOME_GETDATA_FAILURE,
+export const pageHomeDataSuccess = (data) => ({
+  type: PAGE_HOME_GETDATA_SUCCESS,
+  payload: data,
 });
 
-export const homePageDataStart = () => ({
+export const pageHomeDataRequest = () => ({
   type: PAGE_HOME_GETDATA_REQUEST,
 });
 
-export const homePageDataEnd = (data) => ({
-  type: PAGE_HOME_GETDATA_SUCCESS,
-  payload: data,
+export const pageHomeDataFailure = () => ({
+  type: PAGE_HOME_GETDATA_FAILURE,
 });
