@@ -1,0 +1,39 @@
+.footer {
+  .containerFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #e4dede;
+    margin: 20px 0;
+
+    .navigation {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .navLink {
+        width: 15%;
+        margin: 5px 0;
+        text-align: left;
+
+        a {
+          width: auto;
+          display: flex;
+          padding: 5px 15px;
+          color: #000;
+          font-weight: 700;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .information {
+      text-align: center;
+    }
+  }
+  .information,
+  .copyright {
+    text-align: center;
+  }
+}

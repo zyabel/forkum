@@ -15,7 +15,7 @@ export const contactsInfo = [
     label: 'Skype',
     fieldInfo: 'Some skype',
   },
-]
+];
 
 export const formInfo = [
   {
@@ -24,6 +24,7 @@ export const formInfo = [
     type: 'textarea',
     placeholder: 'Enter your message',
     componentClass: 'textarea',
+    help: 'Too short message',
   },
   {
     label: 'Name',
@@ -31,6 +32,7 @@ export const formInfo = [
     type: 'text',
     placeholder: 'Enter your name',
     componentClass: '',
+    help: 'Only letters and numbers',
   },
   {
     label: 'Phone',
@@ -38,7 +40,7 @@ export const formInfo = [
     type: 'tel',
     placeholder: 'Enter your phone',
     componentClass: '',
-    help: 'phone format XXX-XXX-XX-XX'
+    help: 'phone format +XXX-XXX-XX-XX',
   },
   {
     label: 'Email',
@@ -46,5 +48,12 @@ export const formInfo = [
     type: 'email',
     placeholder: 'Enter your email',
     componentClass: '',
+    help: 'Email not valid',
   },
-]
+];
+
+export const coordinates = {
+  lat: 49.987,
+  lng: 36.238,
+  zoom: 13,
+};

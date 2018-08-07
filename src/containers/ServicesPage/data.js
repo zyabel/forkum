@@ -4,9 +4,8 @@ export const servicesInfo = [
     shortInfo: {
       text: `This is a simple hero unit, a simple jumbotron-style component for calling
               extra attention to featured content or information.`,
-      imageName: 'medium icon/car.png',        
+      imageName: 'car.png',
       buttonText: 'See more',
-      
     },
     modalInfo: {
       title: 'Service 1',
@@ -22,9 +21,9 @@ export const servicesInfo = [
         ac consectetur ac, vestibulum at eros.`,
         `Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
         dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-        ac consectetur ac, vestibulum at eros.`,      
+        ac consectetur ac, vestibulum at eros.`,
       ],
-    }
+    },
   },
   {
     id: '2',
@@ -33,9 +32,8 @@ export const servicesInfo = [
               extra attention to featured content or information.
               This is a simple hero unit, a simple jumbotron-style component for calling
               extra attention to featured content or information.`,
-      imageName: 'medium icon/cash.png',        
+      imageName: 'cash.png',
       buttonText: 'See more',
-      
     },
     modalInfo: {
       title: 'Service 2',
@@ -47,7 +45,7 @@ export const servicesInfo = [
         dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
         ac consectetur ac, vestibulum at eros.`,
       ],
-    }
+    },
   },
   {
     id: '3',
@@ -55,9 +53,8 @@ export const servicesInfo = [
       text: `This is a simple hero unit, a simple jumbotron-style component for calling
               This is a simple hero unit, a simple jumbotron-style component for calling
               extra attention to featured content or information.`,
-      imageName: 'medium icon/settings.png',        
+      imageName: 'settings.png',
       buttonText: 'See more',
-      
     },
     modalInfo: {
       title: 'Service 3',
@@ -73,6 +70,6 @@ export const servicesInfo = [
         ` This is a simple hero unit, a simple jumbotron-style component for calling
         extra attention to featured content or information.`,
       ],
-    }
+    },
   },
-]
+];

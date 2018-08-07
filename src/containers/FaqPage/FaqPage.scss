@@ -1,0 +1,44 @@
+.faq-wrapper {
+  h3 {
+    margin-top: 0;
+    color: #fff;
+    background-color: #337ab7;
+    border-radius: 4px;
+    padding: 10px 15px;
+  }
+
+  li.active .section-name {
+    color: #fff;
+  }
+
+  .section-name {
+    font-size: 17px;
+    color: #000;
+
+    section {
+      cursor: pointer;
+      border-radius: 4px;
+
+      .label {
+        margin-bottom: 1rem;
+        padding: 10px 15px;
+        display: block;
+        font-size: 17px;
+        background: none;
+        color: #000;
+
+        &:hover {
+          background: #eee;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .faq-wrapper {
+    .nav {
+      display: none;
+    }
+  }
+}

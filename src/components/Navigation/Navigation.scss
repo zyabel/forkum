@@ -1,0 +1,23 @@
+.navigation {
+  display: flex;
+  justify-content: center;
+
+  .navLink {
+    margin: 10px 0;
+    width: 20%;
+    text-align: center;
+
+    a {
+      width: 100%;
+      display: block;
+      padding: 10px 15px;
+      color: #000;
+      font-weight: 700;
+      text-decoration: none;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
