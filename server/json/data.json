@@ -1,0 +1,513 @@
+{
+  "contactsInfo": 
+  [
+    {
+      "label": "Address",
+      "fieldInfo": "Some adress"
+    },
+    {
+      "label": "Phone",
+      "fieldInfo": "Some phone"
+    },
+    {
+      "label": "Email",
+      "fieldInfo": "Some email"
+    },
+    {
+      "label": "Skype",
+      "fieldInfo": "Some skype"
+    }
+  ],
+
+  "formInfo": 
+  [
+    {
+      "label": "Message",
+      "id": "formControlsTextarea",
+      "type": "textarea",
+      "placeholder": "Enter your message",
+      "componentClass": "textarea",
+      "help": "Too short message"
+    },
+    {
+      "label": "Name",
+      "id": "formControlsText",
+      "type": "text",
+      "placeholder": "Enter your name",
+      "componentClass": "",
+      "help": "Only letters and numbers"
+    },
+    {
+      "label": "Phone",
+      "id": "formControlsPhone",
+      "type": "tel",
+      "placeholder": "Enter your phone",
+      "componentClass": "",
+      "help": "phone format +XXX-XXX-XX-XX"
+    },
+    {
+      "label": "Email",
+      "id": "formControlsEmail",
+      "type": "email",
+      "placeholder": "Enter your email",
+      "componentClass": "",
+      "help": "Email not valid"
+    }
+  ],
+
+  "coordinates":
+  {
+    "lat": 49.987,
+    "lng": 36.238,
+    "zoom": 13
+  },
+
+  "Slides":
+  [
+    {
+      "width": "1000",
+      "height": "500",
+      "size": "1000x500",
+      "path": "1.jpg",
+      "title": "First slide label",
+      "text": "Nulla vitae elit libero, a pharetra augue mollis interdum."
+    },
+    {
+      "width": "1000",
+      "height": "500",
+      "size": "1000x500",
+      "path": "2.jpg",
+      "title": "Second slide label",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "width": "1000",
+      "height": "500",
+      "size": "1000x500",
+      "path": "3.jpg",
+      "title": "Third slide label",
+      "text": "NPraesent commodo cursus magna, vel scelerisque nisl consectetur."
+    }
+  ],
+
+  "FaqData": 
+  [
+    {
+      "id": "1",
+      "sectionName": "Section name",
+      "questions": [
+        {
+          "label": "Question #1 about something ",
+          "text": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor"
+        },
+        {
+          "label": "Question #2 about something",
+          "text": "                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
+        },
+        {
+          "label": "Question #3 about something",
+          "text": "Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "sectionName": "Section name 2",
+      "questions": [
+        {
+          "label": "Question #1 about something",
+          "text": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor"
+        },
+        {
+          "label": "Question #2 about something",
+          "text": "                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "sectionName": "Section name 3",
+      "questions": [
+        {
+          "label": "Question #1 about something",
+          "text": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor"
+        },
+        {
+          "label": "Question #2 about something",
+          "text": "                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
+        },
+        {
+          "label": "Question #3 about something",
+          "text": "Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
+        },
+        {
+          "label": "Question #4 about something",
+          "text": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor"
+        },
+        {
+          "label": "Question #5 about something",
+          "text": "                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terr richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboar dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wol moon tempor, sunt aliqua put a bird on it squid single-origin coffee null assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labor wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteu butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw deni aesthetic synth nesciunt you probably haven't heard of them accusamu labore sustainable VHS."
+        },
+        {
+          "label": "Question #6 about something",
+          "text": "Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
+        }
+      ]
+    }
+  ],
+
+  "NAV_LINKS": [
+    {
+      "linkName": "Home",
+      "linkPath": "/home"
+    },
+    {
+      "linkName": "Services",
+      "linkPath": "/services"
+    },
+    {
+      "linkName": "Catalogue",
+      "linkPath": "/products"
+    },
+    {
+      "linkName": "Info&Questions",
+      "linkPath": "/info"
+    },
+    {
+      "linkName": "Contacts",
+      "linkPath": "/contacts"
+    }
+  ],
+
+  "cards": 
+    [
+      {
+        "id": 1,
+        "img": "1303.jpg",
+        "title": "DAIKIN FTXS50L",
+        "price": "400 Euro",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum  dolore eu fugiat nulla pariatur.",
+        "modal": {
+          "title": "DAIKIN FTXS50L",
+          "description": "modal 1",
+          "details": {
+            "Power": "1kW",
+            "Supply": "220V",
+            "Type": "split",
+            "Power2": "1kW",
+            "Supply2": "220V",
+            "Type2": "split"
+          },
+          "carousel": ["1303.jpg", "1303.jpg", "p-388-FTXS50L.jpg"]
+        }
+      },
+      {
+        "id": 2,
+        "img": "p-388-FTXS50L.jpg",
+        "title": "DAIKIN FTXS50L",
+        "price": "400 Euro",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat.",
+        "modal": {
+          "title": "DAIKIN FTXS50L",
+          "description": "modal 2",
+          "details": {
+            "Power": "1kW",
+            "Supply": "220V",
+            "Type": "split"
+          },
+          "carousel": ["1303.jpg", "1303.jpg", "p-388-FTXS50L.jpg"]
+        }
+      },
+      {
+        "id": 3,
+        "img": "1303.jpg",
+        "title": "DAIKIN FTYS25",
+        "price": "400 Euro",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "modal": {
+          "title": "DAIKIN FTXS50L",
+          "description": "modal 3",
+          "details": {
+            "Power": "1kW",
+            "Supply": "220V",
+            "Type": "split"
+          },
+          "carousel": ["1303.jpg", "1303.jpg", "p-388-FTXS50L.jpg"]
+        }
+      },
+      {
+        "id": 4,
+        "img": "p-388-FTXS50L.jpg",
+        "title": "DAIKIN FTXS50L",
+        "price": "400 Euro",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat.",
+        "modal": {
+          "title": "DAIKIN FTXS50L",
+          "description": "modal 4",
+          "details": {
+            "Power": "1kW",
+            "Supply": "220V",
+            "Type": "split"
+          },
+          "carousel": ["1303.jpg", "1303.jpg", "p-388-FTXS50L.jpg"]
+        }
+      },
+      {
+        "id": 5,
+        "img": "1303.jpg",
+        "title": "DAIKIN FTXS50L",
+        "price": "400 Euro",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "modal": {
+          "title": "DAIKIN FTXS50L",
+          "description": "modal 5",
+          "details": {
+            "Power": "1kW",
+            "Supply": "220V",
+            "Type": "split"
+          },
+          "carousel": ["1303.jpg", "1303.jpg", "p-388-FTXS50L.jpg"]
+        }
+      },
+      {
+        "id": 6,
+        "img": "p-388-FTXS50L.jpg",
+        "title": "DAIKIN FTXS50L",
+        "price": "400 Euro",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat.",
+        "modal": {
+          "title": "DAIKIN FTXS50L",
+          "description": "modal 6",
+          "details": {
+            "Power": "1kW",
+            "Supply": "220V",
+            "Type": "split"
+          },
+          "carousel": ["1303.jpg", "1303.jpg", "p-388-FTXS50L.jpg"]
+        }
+      },
+      {
+        "id": 7,
+        "img": "1303.jpg",
+        "title": "DAIKIN FTYS25",
+        "price": "400 Euro",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "modal": {
+          "title": "DAIKIN FTXS50L",
+          "description": "modal7",
+          "details": {
+            "Power": "1kW",
+            "Supply": "220V",
+            "Type": "split"
+          },
+          "carousel": ["1303.jpg", "1303.jpg", "p-388-FTXS50L.jpg"]
+        }
+      },
+      {
+        "id": 8,
+        "img": "p-388-FTXS50L.jpg",
+        "title": "DAIKIN FTXS50L",
+        "price": "400 Euro",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat.",
+        "modal": {
+          "title": "DAIKIN FTXS50L",
+          "description": "modal 8",
+          "details": {
+            "Power": "1kW",
+            "Supply": "220V",
+            "Type": "split"
+          },
+          "carousel": ["1303.jpg", "1303.jpg", "p-388-FTXS50L.jpg"]
+        }
+      },
+      {
+        "id": 9,
+        "img": "1303.jpg",
+        "title": "DAIKIN FTXS50L",
+        "price": "400 Euro",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "modal": {
+          "title": "DAIKIN FTXS50L",
+          "description": "modal 9",
+          "details": {
+            "Power": "1kW",
+            "Supply": "220V",
+            "Type": "split"
+          },
+          "carousel": ["1303.jpg", "1303.jpg", "p-388-FTXS50L.jpg"]
+        }
+      },
+      {
+        "id": 10,
+        "img": "p-388-FTXS50L.jpg",
+        "title": "DAIKIN FTXS50L",
+        "price": "400 Euro",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat.",
+        "modal": {
+          "title": "DAIKIN FTXS50L",
+          "description": "modal 2",
+          "details": {
+            "Power": "1kW",
+            "Supply": "220V",
+            "Type": "split"
+          },
+          "carousel": ["1303.jpg", "1303.jpg", "p-388-FTXS50L.jpg"]
+        }
+      },
+      {
+        "id": 11,
+        "img": "1303.jpg",
+        "title": "DAIKIN FTYS25",
+        "price": "400 Euro",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "modal": {
+          "title": "DAIKIN FTXS50L",
+          "description": "modal 3",
+          "details": {
+            "Power": "1kW",
+            "Supply": "220V",
+            "Type": "split"
+          },
+          "carousel": ["1303.jpg", "1303.jpg", "p-388-FTXS50L.jpg"]
+        }
+      },
+      {
+        "id": 12,
+        "img": "p-388-FTXS50L.jpg",
+        "title": "DAIKIN FTXS50L",
+        "price": "400 Euro",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat.",
+        "modal": {
+          "title": "DAIKIN FTXS50L",
+          "description": "modal 4",
+          "details": {
+            "Power": "1kW",
+            "Supply": "220V",
+            "Type": "split"
+          },
+          "carousel": ["1303.jpg", "1303.jpg", "p-388-FTXS50L.jpg"]
+        }
+      },
+      {
+        "id": 13,
+        "img": "1303.jpg",
+        "title": "DAIKIN FTXS50L",
+        "price": "400 Euro",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "modal": {
+          "title": "DAIKIN FTXS50L",
+          "description": "modal 1",
+          "details": {
+            "Power": "1kW",
+            "Supply": "220V",
+            "Type": "split"
+          },
+          "carousel": ["1303.jpg", "1303.jpg", "p-388-FTXS50L.jpg"]
+        }
+      },
+      {
+        "id": 14,
+        "img": "p-388-FTXS50L.jpg",
+        "title": "DAIKIN FTXS50L",
+        "price": "400 Euro",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat.",
+        "modal": {
+          "title": "DAIKIN FTXS50L",
+          "description": "modal 2",
+          "details": {
+            "Power": "1kW",
+            "Supply": "220V",
+            "Type": "split"
+          },
+          "carousel": ["1303.jpg", "1303.jpg", "p-388-FTXS50L.jpg"]
+        }
+      },
+      {
+        "id": 15,
+        "img": "1303.jpg",
+        "title": "DAIKIN FTYS25",
+        "price": "400 Euro",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "modal": {
+          "title": "DAIKIN FTXS50L",
+          "description": "modal 3",
+          "details": {
+            "Power": "1kW",
+            "Supply": "220V",
+            "Type": "split"
+          },
+          "carousel": ["1303.jpg", "1303.jpg", "p-388-FTXS50L.jpg"]
+        }
+      },
+      {
+        "id": 16,
+        "img": "p-388-FTXS50L.jpg",
+        "title": "DAIKIN FTXS50L",
+        "price": "400 Euro",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat.",
+        "modal": {
+          "title": "DAIKIN FTXS50L",
+          "description": "modal 4",
+          "details": {
+            "Power": "1kW",
+            "Supply": "220V",
+            "Type": "split"
+          },
+          "carousel": ["1303.jpg", "1303.jpg", "p-388-FTXS50L.jpg"]
+        }
+      }
+    ],
+  
+    "servicesInfo": [
+      {
+        "id": "1",
+        "shortInfo": {
+          "text": "This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.",
+          "imageName": "car.png",
+          "buttonText": "See more"
+        },
+        "modalInfo": {
+          "title": "Service 1",
+          "articles": [
+            "Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.",
+            "Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.",
+            "Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.",
+            "Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros."
+          ]
+        }
+      },
+      {
+        "id": "2",
+        "shortInfo": {
+          "text": "This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information. This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.",
+          "imageName": "cash.png",
+          "buttonText": "See more"
+        },
+        "modalInfo": {
+          "title": "Service 2",
+          "articles": [
+            "Cras mattis consectetur purus sit amet fermentum. Cras justo od dapibus ac facilisis in, egestas eget quam. Morbi leo risus, po ac consectetur ac, vestibulum at eros.",
+            "Cras mattis consectetur purus sit amet fermentum. Cras justo od dapibus ac facilisis in, egestas eget quam. Morbi leo risus, po ac consectetur ac, vestibulum at eros."
+          ]
+        }
+      },
+      {
+        "id": "3",
+        "shortInfo": {
+          "text": "This is a simple hero unit, a simple jumbotron-style component for calling This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.",
+          "imageName": "settings.png",
+          "buttonText": "See more"
+        },
+        "modalInfo": {
+          "title": "Service 3",
+          "articles": [
+            "Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.",
+            "Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.",
+            " This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.",
+            " This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information."
+          ]
+        }
+      }
+    ]
+    
+}
