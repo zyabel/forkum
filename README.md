@@ -34,3 +34,22 @@ app.use(cors({
 
 require('./router/index')(app);
 ```
+
+##### File .env
+
+You need to download your Firebase Service Account json file.
+Put the file at project root.
+
+>warning Always make sure the JSON file is git-ignored!
+
+Change the dummy FIREBASE_DATABASE_URL value with your Firebase project databaseURL, you can find it on your Firebase Console
+
+File `.env` contains next data:
+```
+APP_PORT=8000
+APP_HOST=localhost
+APP_DEBUG=true
+
+FIREBASE_DATABASE_URL=https://<project-name>.firebaseio.com
+FIREBASE_SERVICE_ACCOUNT_KEY_PATH=../service-account-key.json
+```
