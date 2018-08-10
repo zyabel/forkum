@@ -1,6 +1,5 @@
 require('dotenv').config()
 
-const admin = require('./src/firebase-admin');
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();

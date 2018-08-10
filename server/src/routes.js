@@ -24,10 +24,9 @@ router.get('/', (req, res) => {
 });
 
 router.get('/home', (req, res) => {
-    console.log('"Error: " + error.code');
-    res.json({
-        message: `You're logged in as ${res.locals.user.email} with Firebase UID: ${res.locals.user.uid}`
-    });
+  res.json({
+    message: `You're logged in as ${res.locals.user.email} with Firebase UID: ${res.locals.user.uid}`
+  });
 });
 
 module.exports = router;
