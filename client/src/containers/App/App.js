@@ -1,16 +1,14 @@
-import React, { Component } from 'react'
-import { HomePage } from '../index'
-import { ContactsPage } from '../index'
-import { ServicesPage } from '../index'
-import { AdminLayout } from '../layouts/AdminLayout'
-import { ProductsPage } from '../index'
-import { FaqPage } from '../index'
-import { Error404 } from '../../components/index'
+import React, { Component } from 'react';
+import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import {
-  Route,
-  Switch,
-  BrowserRouter
-} from "react-router-dom"
+  HomePage,
+  ContactsPage,
+  ServicesPage,
+  ProductsPage,
+  FaqPage,
+  Error404,
+} from '../index';
+import { AdminLayout } from '../layouts/AdminLayout';
 
 class App extends Component {
   render() {
@@ -18,18 +16,18 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Switch>
-            <Route exact path="/" component={HomePage}/>
-            <Route path="/home" component={HomePage}/>
-            <Route path="/services" component={ServicesPage}/>
-            <Route path="/products" component={ProductsPage}/>
-            <Route path="/info" component={FaqPage}/>
-            <Route path="/contacts" component={ContactsPage}/>
-            <Route path="/login" component={AdminLayout}/>
+            <Route exact path="/" component={HomePage} />
+            <Route path="/home" component={HomePage} />
+            <Route path="/services" component={ServicesPage} />
+            <Route path="/products" component={ProductsPage} />
+            <Route path="/info" component={FaqPage} />
+            <Route path="/contacts" component={ContactsPage} />
+            <Route path="/login" component={AdminLayout} />
             <Route component={Error404} />
           </Switch>
         </div>
       </BrowserRouter>
-    )
+    );
   }
 }
 

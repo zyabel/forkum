@@ -1,7 +1,6 @@
-import {
-  PAGE_HOME_GETDATA_SUCCESS,
-  PAGE_HOME_GETDATA_FAILURE,
-} from '../constants';
+import { PAGE_GETDATA_SUCCESS, PAGE_GETDATA_FAILURE } from '../constants';
+
+import { HOME } from '../constants/prefix';
 
 const initialState = {
   data: null,
@@ -10,10 +9,10 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case PAGE_HOME_GETDATA_SUCCESS:
+    case `${HOME}_${PAGE_GETDATA_SUCCESS}`:
       return { ...state, data: action.payload };
 
-    case PAGE_HOME_GETDATA_FAILURE:
+    case `${HOME}_${PAGE_GETDATA_FAILURE}`:
       return { ...state, error: true };
 
     default:

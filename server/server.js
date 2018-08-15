@@ -23,6 +23,7 @@ const host = process.env.APP_HOST || '127.0.0.1';
 const router = require('./src/routes');
 
 app.use('/', router);
+app.use('/services', router);
 app.listen(port, host);
 
 

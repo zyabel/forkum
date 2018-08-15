@@ -17,7 +17,7 @@ class HomePage extends Component {
   };
 
   componentDidMount() {
-    return this.props.pageHomeDataRequest();
+    this.props.pageHomeDataRequest();
   }
 
   renderContent = () => {

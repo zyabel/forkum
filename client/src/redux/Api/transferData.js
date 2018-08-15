@@ -10,13 +10,13 @@ class TransferData {
         return response.json();
       })
       .then((data) => {
-        return data;
+        return data.Slides;
       });
   }
 
   // Getting page data for the cabinet/user page
-  static dataServerUserCabinet() {
-    return fetch('http://localhost:8080/cabinet/user')
+  static dataServicesPage() {
+    return fetch('http://localhost:8000/services')
       .then((response) => {
         if (response.status !== 200) {
           console.log(`Oops, problem. Status Code: ${response.status}`);
@@ -24,7 +24,9 @@ class TransferData {
         }
         return response.json();
       })
-      .then((data) => { return data; });
+      .then((data) => {
+        return data.servicesInfo;
+      });
   }
 
   // Dispathing form data for the cabinet/user page
@@ -36,10 +38,9 @@ class TransferData {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({ ...data }),
-    })
-      .then((response) => {
-        return response.json();
-      });
+    }).then((response) => {
+      return response.json();
+    });
   }
 }
 
