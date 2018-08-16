@@ -1,48 +1,42 @@
-import React from 'react'
-import { Navigation } from '../../components'
-import Logo from '../../images/Creative_Logo.png'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { Navigation } from '../../components';
+import Logo from '../../images/Creative_Logo.png';
 
 const style = {
-    styleActive :{
-      color: '#fff',
-      background: '#337ab7',
-      borderRadius: '4px',
-    },
-    logo: {
-      margin: '15px',
-      textAlign: 'center',
-    }
-}
+  styleActive: {
+    color: '#fff',
+    background: '#337ab7',
+    borderRadius: '4px',
+  },
+  logo: {
+    margin: '15px',
+    textAlign: 'center',
+  },
+};
 
-const NAV_LINKS = [
-  {
-    linkName: 'Home',
-    linkPath: '/home',
-  },
-  {
-    linkName: 'Services',
-    linkPath: '/services',
-  },
-  {
-    linkName: 'Catalogue',
-    linkPath: '/products',
-  },
-  {
-    linkName: 'Info&Questions',
-    linkPath: '/info',
-  },
-  {
-    linkName: 'Contacts',
-    linkPath: '/contacts',
-  },
-]
+const Header = (props) => {
+  return (
+    <header className="header">
+      <div style={style.logo}>
+        <img src={Logo} alt="logo" />
+      </div>
+      <Navigation styles={style.styleActive} data={props.links} />
+    </header>
+  );
+};
 
-const Header = () =>
-  <header className='header'>
-    <div style={style.logo}>
-      <img src={Logo} alt='logo' />
-    </div>
-    <Navigation styles={style.styleActive} data={NAV_LINKS}/>
-  </header>
+const mapStateToProps = (state) => {
+  return {
+    links: state.pageHome.links,
+  };
+};
 
-export default Header
+Header.propTypes = {
+  styles: PropTypes.object,
+  data: PropTypes.array,
+  links: PropTypes.array,
+};
+
+export default connect(mapStateToProps)(Header);

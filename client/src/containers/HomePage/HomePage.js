@@ -11,20 +11,20 @@ import { pageHomeDataRequest } from '../../redux/actions';
 
 class HomePage extends Component {
   static propTypes = {
-    data: PropTypes.array,
+    data: PropTypes.object,
     error: PropTypes.bool,
     pageHomeDataRequest: PropTypes.func,
   };
 
   componentDidMount() {
-    return this.props.pageHomeDataRequest();
+    this.props.pageHomeDataRequest();
   }
 
   renderContent = () => {
     return (
       <MainLayout>
         <Carousel>
-          {this.props.data.map((slide, i) => {
+          {this.props.data.Slides.map((slide, i) => {
             return (
               <Carousel.Item key={i}>
                 <Image

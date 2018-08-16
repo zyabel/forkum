@@ -23,10 +23,15 @@ router.get('/', (req, res) => {
   );
 });
 
-router.get('/home', (req, res) => {
-  res.json({
-    message: `You're logged in as ${res.locals.user.email} with Firebase UID: ${res.locals.user.uid}`
-  });
+router.get('/services', (req, res) => {
+  firebase.on("value", function(data) {
+    res.json(
+      (data.val())
+    );
+    }, function (error) {
+      console.log("Error: " + error.code);
+    }
+  );
 });
 
 module.exports = router;
