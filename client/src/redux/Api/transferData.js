@@ -10,7 +10,7 @@ class TransferData {
         return response.json();
       })
       .then((data) => {
-        return data.Slides;
+        return data;
       });
   }
 

@@ -26,7 +26,6 @@ class ServicesPage extends Component {
   }
 
   componentDidMount() {
-    console.log('serv');
     this.props.pageServicesDataRequest();
   }
 
