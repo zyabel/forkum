@@ -2,11 +2,11 @@
   "contactsInfo": 
   [
     {
-      "label": "Address",
+      "label": "Адрес",
       "fieldInfo": "Some adress"
     },
     {
-      "label": "Phone",
+      "label": "Телефон",
       "fieldInfo": "Some phone"
     },
     {
@@ -69,24 +69,24 @@
       "height": "500",
       "size": "1000x500",
       "path": "1.jpg",
-      "title": "First slide label",
-      "text": "Nulla vitae elit libero, a pharetra augue mollis interdum."
+      "title": "Заголовок слайда",
+      "text": "Текст слайда"
     },
     {
       "width": "1000",
       "height": "500",
       "size": "1000x500",
       "path": "2.jpg",
-      "title": "Second slide label",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "title": "SЗаголовок слайда",
+      "text": "Текст слайда"
     },
     {
       "width": "1000",
       "height": "500",
       "size": "1000x500",
       "path": "3.jpg",
-      "title": "Third slide label",
-      "text": "NPraesent commodo cursus magna, vel scelerisque nisl consectetur."
+      "title": "Заголовок слайда",
+      "text": "Текст слайда"
     }
   ],
 
@@ -94,62 +94,62 @@
   [
     {
       "id": "1",
-      "sectionName": "Section name",
+      "sectionName": "Тематика",
       "questions": [
         {
-          "label": "Question #1 about something ",
+          "label": "Вопрос #1 ",
           "text": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor"
         },
         {
-          "label": "Question #2 about something",
+          "label": "Вопрос #2",
           "text": "                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
         },
         {
-          "label": "Question #3 about something",
+          "label": "Вопрос #3",
           "text": "Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
         }
       ]
     },
     {
       "id": "2",
-      "sectionName": "Section name 2",
+      "sectionName": "Тематика 2",
       "questions": [
         {
-          "label": "Question #1 about something",
+          "label": "Вопрос #1",
           "text": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor"
         },
         {
-          "label": "Question #2 about something",
+          "label": "Вопрос #2",
           "text": "                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
         }
       ]
     },
     {
       "id": "3",
-      "sectionName": "Section name 3",
+      "sectionName": "Тематика 3",
       "questions": [
         {
-          "label": "Question #1 about something",
+          "label": "Вопрос #1",
           "text": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor"
         },
         {
-          "label": "Question #2 about something",
+          "label": "Вопрос #2",
           "text": "                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
         },
         {
-          "label": "Question #3 about something",
+          "label": "Вопрос #3",
           "text": "Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
         },
         {
-          "label": "Question #4 about something",
+          "label": "Вопрос #4",
           "text": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor"
         },
         {
-          "label": "Question #5 about something",
+          "label": "Вопрос #5",
           "text": "                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terr richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboar dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wol moon tempor, sunt aliqua put a bird on it squid single-origin coffee null assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labor wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteu butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw deni aesthetic synth nesciunt you probably haven't heard of them accusamu labore sustainable VHS."
         },
         {
-          "label": "Question #6 about something",
+          "label": "Вопрос #6",
           "text": "Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
         }
       ]
@@ -158,23 +158,23 @@
 
   "NAV_LINKS": [
     {
-      "linkName": "Home",
+      "linkName": "Главная",
       "linkPath": "/home"
     },
     {
-      "linkName": "Services",
+      "linkName": "Услуги",
       "linkPath": "/services"
     },
     {
-      "linkName": "Catalogue",
+      "linkName": "Каталог",
       "linkPath": "/products"
     },
     {
-      "linkName": "Info&Questions",
+      "linkName": "Вопросы",
       "linkPath": "/info"
     },
     {
-      "linkName": "Contacts",
+      "linkName": "Контакты",
       "linkPath": "/contacts"
     }
   ],
@@ -186,7 +186,7 @@
         "img": "1303.jpg",
         "title": "DAIKIN FTXS50L",
         "price": "400 Euro",
-        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum  dolore eu fugiat nulla pariatur.",
+        "description": "Некоторое описание",
         "modal": {
           "title": "DAIKIN FTXS50L",
           "description": "modal 1",
@@ -223,7 +223,7 @@
         "img": "1303.jpg",
         "title": "DAIKIN FTYS25",
         "price": "400 Euro",
-        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "description": "Некоторое описание",
         "modal": {
           "title": "DAIKIN FTXS50L",
           "description": "modal 3",
@@ -257,7 +257,7 @@
         "img": "1303.jpg",
         "title": "DAIKIN FTXS50L",
         "price": "400 Euro",
-        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "description": "Некоторое описание",
         "modal": {
           "title": "DAIKIN FTXS50L",
           "description": "modal 5",
@@ -291,7 +291,7 @@
         "img": "1303.jpg",
         "title": "DAIKIN FTYS25",
         "price": "400 Euro",
-        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "description": "Некоторое описание",
         "modal": {
           "title": "DAIKIN FTXS50L",
           "description": "modal7",
@@ -325,7 +325,7 @@
         "img": "1303.jpg",
         "title": "DAIKIN FTXS50L",
         "price": "400 Euro",
-        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "description": "Некоторое описание",
         "modal": {
           "title": "DAIKIN FTXS50L",
           "description": "modal 9",
@@ -359,7 +359,7 @@
         "img": "1303.jpg",
         "title": "DAIKIN FTYS25",
         "price": "400 Euro",
-        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "description": "Некоторое описание",
         "modal": {
           "title": "DAIKIN FTXS50L",
           "description": "modal 3",
@@ -393,7 +393,7 @@
         "img": "1303.jpg",
         "title": "DAIKIN FTXS50L",
         "price": "400 Euro",
-        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "description": "Некоторое описание",
         "modal": {
           "title": "DAIKIN FTXS50L",
           "description": "modal 1",
@@ -427,7 +427,7 @@
         "img": "1303.jpg",
         "title": "DAIKIN FTYS25",
         "price": "400 Euro",
-        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "description": "Некоторое описание",
         "modal": {
           "title": "DAIKIN FTXS50L",
           "description": "modal 3",

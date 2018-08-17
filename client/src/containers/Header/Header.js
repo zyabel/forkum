@@ -28,7 +28,6 @@ const Header = (props) => {
 };
 
 const mapStateToProps = (state) => {
-  console.log('header', state.init.data.NAV_LINKS);
   return {
     links: state.init.data.NAV_LINKS,
   };

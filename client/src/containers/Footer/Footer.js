@@ -41,7 +41,6 @@ const Footer = (props) => {
 };
 
 const mapStateToProps = (state) => {
-  console.log('footer', state.init.data.NAV_LINKS);
   return {
     links: state.init.data.NAV_LINKS,
   };

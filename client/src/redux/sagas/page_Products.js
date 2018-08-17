@@ -12,7 +12,7 @@ import TransferData from '../Api/transferData';
 function* pageProductsGetDataAsync(action) {
   try {
     const pageData = yield call(TransferData.dataProductPage);
-    console.log('saga', pageData);
+
     yield put({
       type: `${PRODUCTS}_${PAGE_GETDATA_SUCCESS}`,
       payload: pageData,

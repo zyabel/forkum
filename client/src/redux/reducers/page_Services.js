@@ -13,7 +13,6 @@ export default (state = initialState, action) => {
       return {
         ...state,
         data: action.payload,
-        links: action.payload.NAV_LINKS,
       };
 
     case `${SERVICES}_${PAGE_GETDATA_FAILURE}`:
