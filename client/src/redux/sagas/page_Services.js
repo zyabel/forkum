@@ -22,7 +22,7 @@ function* pageServicesGetDataAsync(action) {
   }
 }
 
-export default function* pagesGetData() {
+export default function* pageServicesGetData() {
   yield takeEvery(
     `${SERVICES}_${PAGE_GETDATA_REQUEST}`,
     pageServicesGetDataAsync
