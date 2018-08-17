@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import {
   HomePage,
@@ -6,13 +8,23 @@ import {
   ServicesPage,
   ProductsPage,
   FaqPage,
-  Error404,
 } from '../index';
+import { Error404, Spinner } from '../../components';
 import { AdminLayout } from '../layouts/AdminLayout';
+import { getDataRequest } from '../../redux/actions';
 
 class App extends Component {
+  static propTypes = {
+    data: PropTypes.object,
+    getDataRequest: PropTypes.func,
+  };
+
+  componentDidMount() {
+    this.props.getDataRequest();
+  }
+
   render() {
-    return (
+    return this.props.data ? (
       <BrowserRouter>
         <div className="App">
           <Switch>
@@ -27,8 +39,27 @@ class App extends Component {
           </Switch>
         </div>
       </BrowserRouter>
+    ) : (
+      <Spinner />
     );
   }
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  return {
+    data: state.init.data,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    getDataRequest: () => {
+      dispatch(getDataRequest());
+    },
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App);

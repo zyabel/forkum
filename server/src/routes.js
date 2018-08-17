@@ -23,7 +23,29 @@ router.get('/', (req, res) => {
   );
 });
 
+router.get('/home', (req, res) => {
+  firebase.on("value", function(data) {
+    res.json(
+      (data.val())
+    );
+    }, function (error) {
+      console.log("Error: " + error.code);
+    }
+  );
+});
+
 router.get('/services', (req, res) => {
+  firebase.on("value", function(data) {
+    res.json(
+      (data.val())
+    );
+    }, function (error) {
+      console.log("Error: " + error.code);
+    }
+  );
+});
+
+router.get('/products', (req, res) => {
   firebase.on("value", function(data) {
     res.json(
       (data.val())
