@@ -55,7 +55,7 @@ class TransferData {
         return response.json();
       })
       .then((data) => {
-        return data;
+        return data.cards;
       });
   }
 

@@ -14,6 +14,7 @@ class ProductsPage extends Component {
   static propTypes = {
     cards: PropTypes.array,
     error: PropTypes.bool,
+    pageProductsDataRequest: PropTypes.func,
   };
 
   constructor(props, context) {
@@ -63,21 +64,7 @@ class ProductsPage extends Component {
               </Button>
             </p>
           </Thumbnail>
-          <Modal
-            show={this.state[i] || false}
-            onHide={() => this.handleClose(i)}
-            bsSize="large"
-          >
-            <Modal.Header closeButton>
-              <Modal.Title>{`${card.modal.title}`}</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-              <Card {...card} />
-            </Modal.Body>
-            <Modal.Footer>
-              <Button onClick={() => this.handleClose(i)}>Close</Button>
-            </Modal.Footer>
-          </Modal>
+          {this.renderModal(card, i)}
         </div>
       );
     });
@@ -94,6 +81,26 @@ class ProductsPage extends Component {
           />
         </div>
       </MainLayout>
+    );
+  };
+
+  renderModal = (card, i) => {
+    return (
+      <Modal
+        show={this.state[i] || false}
+        onHide={() => this.handleClose(i)}
+        bsSize="large"
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>{`${card.modal.title}`}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Card {...card} />
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={() => this.handleClose(i)}>Close</Button>
+        </Modal.Footer>
+      </Modal>
     );
   };
 
