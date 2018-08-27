@@ -462,9 +462,9 @@
       {
         "id": "1",
         "shortInfo": {
-          "text": "This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.",
+          "text": "Доставка и установка.",
           "imageName": "car.png",
-          "buttonText": "See more"
+          "buttonText": "Подробнее"
         },
         "modalInfo": {
           "title": "Service 1",
@@ -479,9 +479,9 @@
       {
         "id": "2",
         "shortInfo": {
-          "text": "This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information. This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.",
+          "text": "Выгодные цены на кондиционеры и установку.",
           "imageName": "cash.png",
-          "buttonText": "See more"
+          "buttonText": "Подробнее"
         },
         "modalInfo": {
           "title": "Service 2",
@@ -494,9 +494,9 @@
       {
         "id": "3",
         "shortInfo": {
-          "text": "This is a simple hero unit, a simple jumbotron-style component for calling This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.",
+          "text": "Квалифицированная консультация специалистов, выезд на дом.",
           "imageName": "settings.png",
-          "buttonText": "See more"
+          "buttonText": "Подробнее"
         },
         "modalInfo": {
           "title": "Service 3",
