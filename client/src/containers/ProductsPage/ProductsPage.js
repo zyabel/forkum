@@ -58,7 +58,7 @@ class ProductsPage extends Component {
   dataSearch(e) {
     const value = e.target.value;
     const res = sortCards(value, this.props.cards);
-    this.setState({ pageOfItems: res });
+    this.setState({ pageOfItems: res, pageItems: res });
   }
 
   renderSelection = () => {
