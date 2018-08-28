@@ -42,7 +42,7 @@ const Footer = (props) => {
 
 const mapStateToProps = (state) => {
   return {
-    links: state.pageHome.links,
+    links: state.init.data.NAV_LINKS,
   };
 };
 

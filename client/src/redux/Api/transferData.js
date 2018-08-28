@@ -1,7 +1,7 @@
 class TransferData {
-  // Getting page data for the Home page
-  static dataHomePage() {
-    return fetch('http://localhost:8000/')
+  // Getting initial redux data
+  static data() {
+    return fetch('http://localhost:8000')
       .then((response) => {
         if (response.status !== 200) {
           console.log(`Oops, problem. Status Code: ${response.status}`);
@@ -14,7 +14,22 @@ class TransferData {
       });
   }
 
-  // Getting page data for the cabinet/user page
+  // Getting page data for the Home page
+  static dataHomePage() {
+    return fetch('http://localhost:8000/home')
+      .then((response) => {
+        if (response.status !== 200) {
+          console.log(`Oops, problem. Status Code: ${response.status}`);
+          return;
+        }
+        return response.json();
+      })
+      .then((data) => {
+        return data;
+      });
+  }
+
+  // Getting page data for the Services page
   static dataServicesPage() {
     return fetch('http://localhost:8000/services')
       .then((response) => {
@@ -26,6 +41,21 @@ class TransferData {
       })
       .then((data) => {
         return data.servicesInfo;
+      });
+  }
+
+  // Getting page data for the Products page
+  static dataProductPage() {
+    return fetch('http://localhost:8000/products')
+      .then((response) => {
+        if (response.status !== 200) {
+          console.log(`Oops, problem. Status Code: ${response.status}`);
+          return;
+        }
+        return response.json();
+      })
+      .then((data) => {
+        return data.cards;
       });
   }
 

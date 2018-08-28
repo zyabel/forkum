@@ -19,6 +19,6 @@ function* pageHomeGetDataAsync(action) {
   }
 }
 
-export default function* pagesGetData() {
+export default function* pageHomeGetData() {
   yield takeEvery(`${HOME}_${PAGE_GETDATA_REQUEST}`, pageHomeGetDataAsync);
 }
