@@ -13,10 +13,14 @@ export default (type, props) => {
       });
 
     case 'currencyUSD':
-      return props.filter((card) => card.currency === 'USD');
+      return _.filter(props, (card) => {
+        return card.currency === 'USD';
+      });
 
     case 'currencyEuro':
-      return props.filter((card) => card.currency === 'Euro');
+      return _.filter(props, (card) => {
+        return card.currency === 'Euro';
+      });
 
     case 'name':
       return _.sortBy(props, 'title');

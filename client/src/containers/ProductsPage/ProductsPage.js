@@ -15,6 +15,7 @@ import './ProductsPage.scss';
 class ProductsPage extends Component {
   static propTypes = {
     cards: PropTypes.array,
+    product: PropTypes.array,
     error: PropTypes.bool,
     pageProductsDataRequest: PropTypes.func,
   };
@@ -25,13 +26,15 @@ class ProductsPage extends Component {
     this.handleShow = this.handleShow.bind(this);
     this.handleClose = this.handleClose.bind(this);
     this.onChangePage = this.onChangePage.bind(this);
+    this.sortCard = this.sortCard.bind(this);
     this.dataSearch = this.dataSearch.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    this.reset = this.reset.bind(this);
 
     this.state = {
       i: {},
       pageItems: this.props.cards,
       pageOfItems: this.props.cards.cards,
-      sortBy: null,
     };
   }
 
@@ -55,22 +58,71 @@ class ProductsPage extends Component {
     this.setState({ ...this.state.i, newState });
   }
 
-  dataSearch(e) {
+  sortCard(e) {
     const value = e.target.value;
-    const res = sortCards(value, this.props.cards);
+
+    if (value === 'all') {
+      this.setState({
+        pageItems: this.props.cards,
+        pageOfItems: this.props.cards.cards,
+      });
+    }
+
+    const res = sortCards(value, this.props.product);
     this.setState({ pageOfItems: res, pageItems: res });
+  }
+
+  handleChange(e) {
+    this.setState({
+      value: e.target.value,
+    });
+  }
+
+  dataSearch() {
+    const value = this.state.value;
+
+    const filter = this.props.product.filter((card) => {
+      return card.title.includes(value);
+    });
+
+    this.setState({
+      pageOfItems: filter,
+      pageItems: filter,
+    });
+  }
+
+  reset() {
+    this.setState({
+      pageOfItems: this.props.product,
+      pageItems: this.props.product,
+    });
   }
 
   renderSelection = () => {
     return (
       <Form>
         <FormGroup>
-          <Label>Sort by</Label>
+          <Label bsStyle="info">Search</Label>
+          <Input
+            type="search"
+            name="search"
+            id="search"
+            onChange={this.handleChange}
+          />
+          <Button bsStyle="primary" onClick={this.dataSearch}>
+            Find
+          </Button>
+          <Button bsStyle="primary" onClick={this.reset}>
+            RESET
+          </Button>
+        </FormGroup>
+        <FormGroup>
+          <Label bsStyle="info">Sort by</Label>
           <Input
             type="select"
             name="select"
             id="sortSelect"
-            onChange={this.dataSearch}
+            onChange={this.sortCard}
           >
             <option>all</option>
             <option>priceLow</option>
@@ -95,7 +147,12 @@ class ProductsPage extends Component {
             </Label>
             <p className="card-description">{card.description}</p>
             <p>
-              <Button bsStyle="primary" onClick={() => this.handleShow(i)}>
+              <Button
+                bsStyle="primary"
+                onClick={() => {
+                  return this.handleShow(i);
+                }}
+              >
                 See more
               </Button>
             </p>
@@ -110,7 +167,9 @@ class ProductsPage extends Component {
     return (
       <Modal
         show={this.state[i] || false}
-        onHide={() => this.handleClose(i)}
+        onHide={() => {
+          return this.handleClose(i);
+        }}
         bsSize="large"
       >
         <Modal.Header closeButton>
@@ -120,7 +179,13 @@ class ProductsPage extends Component {
           <Card {...card} />
         </Modal.Body>
         <Modal.Footer>
-          <Button onClick={() => this.handleClose(i)}>Close</Button>
+          <Button
+            onClick={() => {
+              return this.handleClose(i);
+            }}
+          >
+            Close
+          </Button>
         </Modal.Footer>
       </Modal>
     );
@@ -149,6 +214,7 @@ class ProductsPage extends Component {
 const mapStateToProps = (state) => {
   return {
     cards: state.init.data.cards,
+    product: state.pageProducts.cards,
     error: state.pageProducts.error,
   };
 };
