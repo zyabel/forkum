@@ -185,7 +185,8 @@
         "id": 1,
         "img": "1303.jpg",
         "title": "DAIKIN FTXS50L",
-        "price": "400 Euro",
+        "price": "400",
+        "currency": "Euro",
         "description": "Некоторое описание",
         "modal": {
           "title": "DAIKIN FTXS50L",
@@ -205,7 +206,8 @@
         "id": 2,
         "img": "p-388-FTXS50L.jpg",
         "title": "DAIKIN FTXS50L",
-        "price": "400 Euro",
+        "price": "200",
+        "currency": "Euro",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat.",
         "modal": {
           "title": "DAIKIN FTXS50L",
@@ -222,7 +224,8 @@
         "id": 3,
         "img": "1303.jpg",
         "title": "DAIKIN FTYS25",
-        "price": "400 Euro",
+        "price": "2400",
+        "currency": "Euro",
         "description": "Некоторое описание",
         "modal": {
           "title": "DAIKIN FTXS50L",
@@ -239,7 +242,8 @@
         "id": 4,
         "img": "p-388-FTXS50L.jpg",
         "title": "DAIKIN FTXS50L",
-        "price": "400 Euro",
+        "price": "4300",
+        "currency": "Euro",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat.",
         "modal": {
           "title": "DAIKIN FTXS50L",
@@ -256,7 +260,8 @@
         "id": 5,
         "img": "1303.jpg",
         "title": "DAIKIN FTXS50L",
-        "price": "400 Euro",
+        "price": "8400",
+        "currency": "Euro",
         "description": "Некоторое описание",
         "modal": {
           "title": "DAIKIN FTXS50L",
@@ -273,7 +278,8 @@
         "id": 6,
         "img": "p-388-FTXS50L.jpg",
         "title": "DAIKIN FTXS50L",
-        "price": "400 Euro",
+        "price": "400",
+        "currency": "Euro",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat.",
         "modal": {
           "title": "DAIKIN FTXS50L",
@@ -290,7 +296,8 @@
         "id": 7,
         "img": "1303.jpg",
         "title": "DAIKIN FTYS25",
-        "price": "400 Euro",
+        "price": "400",
+        "currency": "Euro",
         "description": "Некоторое описание",
         "modal": {
           "title": "DAIKIN FTXS50L",
@@ -307,7 +314,8 @@
         "id": 8,
         "img": "p-388-FTXS50L.jpg",
         "title": "DAIKIN FTXS50L",
-        "price": "400 Euro",
+        "price": "1400",
+        "currency": "Euro",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat.",
         "modal": {
           "title": "DAIKIN FTXS50L",
@@ -324,7 +332,8 @@
         "id": 9,
         "img": "1303.jpg",
         "title": "DAIKIN FTXS50L",
-        "price": "400 Euro",
+        "price": "400",
+        "currency": "Euro",
         "description": "Некоторое описание",
         "modal": {
           "title": "DAIKIN FTXS50L",
@@ -341,7 +350,8 @@
         "id": 10,
         "img": "p-388-FTXS50L.jpg",
         "title": "DAIKIN FTXS50L",
-        "price": "400 Euro",
+        "price": "400",
+        "currency": "Euro",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat.",
         "modal": {
           "title": "DAIKIN FTXS50L",
@@ -358,7 +368,8 @@
         "id": 11,
         "img": "1303.jpg",
         "title": "DAIKIN FTYS25",
-        "price": "400 Euro",
+        "price": "400",
+        "currency": "USD",
         "description": "Некоторое описание",
         "modal": {
           "title": "DAIKIN FTXS50L",
@@ -375,7 +386,8 @@
         "id": 12,
         "img": "p-388-FTXS50L.jpg",
         "title": "DAIKIN FTXS50L",
-        "price": "400 Euro",
+        "price": "400",
+        "currency": "USD",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat.",
         "modal": {
           "title": "DAIKIN FTXS50L",
@@ -392,7 +404,8 @@
         "id": 13,
         "img": "1303.jpg",
         "title": "DAIKIN FTXS50L",
-        "price": "400 Euro",
+        "price": "400",
+        "currency": "USD",
         "description": "Некоторое описание",
         "modal": {
           "title": "DAIKIN FTXS50L",
@@ -409,7 +422,8 @@
         "id": 14,
         "img": "p-388-FTXS50L.jpg",
         "title": "DAIKIN FTXS50L",
-        "price": "400 Euro",
+        "price": "400",
+        "currency": "USD",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat.",
         "modal": {
           "title": "DAIKIN FTXS50L",
@@ -426,7 +440,8 @@
         "id": 15,
         "img": "1303.jpg",
         "title": "DAIKIN FTYS25",
-        "price": "400 Euro",
+        "price": "400",
+        "currency": "USD",
         "description": "Некоторое описание",
         "modal": {
           "title": "DAIKIN FTXS50L",
@@ -443,8 +458,9 @@
         "id": 16,
         "img": "p-388-FTXS50L.jpg",
         "title": "DAIKIN FTXS50L",
-        "price": "400 Euro",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat.",
+        "price": "400",
+        "currency": "USD",
+        "description": "И тут тоже описание.",
         "modal": {
           "title": "DAIKIN FTXS50L",
           "description": "modal 4",
@@ -467,12 +483,9 @@
           "buttonText": "Подробнее"
         },
         "modalInfo": {
-          "title": "Service 1",
+          "title": "Доставка и установка",
           "articles": [
-            "Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.",
-            "Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.",
-            "Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.",
-            "Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros."
+            "Подробное описание услуги."
           ]
         }
       },
@@ -484,10 +497,9 @@
           "buttonText": "Подробнее"
         },
         "modalInfo": {
-          "title": "Service 2",
+          "title": "Выгодные цены на кондиционеры и установку",
           "articles": [
-            "Cras mattis consectetur purus sit amet fermentum. Cras justo od dapibus ac facilisis in, egestas eget quam. Morbi leo risus, po ac consectetur ac, vestibulum at eros.",
-            "Cras mattis consectetur purus sit amet fermentum. Cras justo od dapibus ac facilisis in, egestas eget quam. Morbi leo risus, po ac consectetur ac, vestibulum at eros."
+            "Подробное описание услуги."
           ]
         }
       },
@@ -499,12 +511,9 @@
           "buttonText": "Подробнее"
         },
         "modalInfo": {
-          "title": "Service 3",
+          "title": "Квалифицированная консультация специалистов, выезд на дом",
           "articles": [
-            "Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.",
-            "Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.",
-            " This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.",
-            " This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information."
+            "Подробное описание услуги."
           ]
         }
       }

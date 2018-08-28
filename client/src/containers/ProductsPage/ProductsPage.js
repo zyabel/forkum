@@ -3,8 +3,10 @@ import _ from 'lodash';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Thumbnail, Button, Label, Modal } from 'react-bootstrap';
+import { Form, Input, FormGroup } from 'reactstrap';
 import { MainLayout } from '../layouts/MainLayout';
 import { Card, Pagination, Spinner } from '../../components';
+import sortCards from '../../utils/sortCards';
 
 import { pageProductsDataRequest } from '../../redux/actions';
 
@@ -23,11 +25,13 @@ class ProductsPage extends Component {
     this.handleShow = this.handleShow.bind(this);
     this.handleClose = this.handleClose.bind(this);
     this.onChangePage = this.onChangePage.bind(this);
+    this.dataSearch = this.dataSearch.bind(this);
 
     this.state = {
       i: {},
       pageItems: this.props.cards,
       pageOfItems: this.props.cards.cards,
+      sortBy: null,
     };
   }
 
@@ -51,13 +55,44 @@ class ProductsPage extends Component {
     this.setState({ ...this.state.i, newState });
   }
 
-  renderProductCard() {
+  dataSearch(e) {
+    const value = e.target.value;
+    const res = sortCards(value, this.props.cards);
+    this.setState({ pageOfItems: res });
+  }
+
+  renderSelection = () => {
+    return (
+      <Form>
+        <FormGroup>
+          <Label>Sort by</Label>
+          <Input
+            type="select"
+            name="select"
+            id="sortSelect"
+            onChange={this.dataSearch}
+          >
+            <option>all</option>
+            <option>priceLow</option>
+            <option>priceUp</option>
+            <option>currencyUSD</option>
+            <option>currencyEuro</option>
+            <option>name</option>
+          </Input>
+        </FormGroup>
+      </Form>
+    );
+  };
+
+  renderProductCard = () => {
     return _.map(this.state.pageOfItems, (card, i) => {
       return (
         <div key={card.id} style={{ display: 'flex' }}>
           <Thumbnail src={require(`../../images/${card.img}`)} alt="image">
             <h3>{card.title}</h3>
-            <Label bsStyle="info">{card.price}</Label>
+            <Label bsStyle="info">
+              {card.price} {card.currency}
+            </Label>
             <p className="card-description">{card.description}</p>
             <p>
               <Button bsStyle="primary" onClick={() => this.handleShow(i)}>
@@ -69,20 +104,6 @@ class ProductsPage extends Component {
         </div>
       );
     });
-  }
-
-  renderContent = () => {
-    return (
-      <MainLayout>
-        <div className="cards-wrapper">{this.renderProductCard()}</div>
-        <div style={{ textAlign: 'center' }}>
-          <Pagination
-            items={this.state.pageItems}
-            onChangePage={this.onChangePage}
-          />
-        </div>
-      </MainLayout>
-    );
   };
 
   renderModal = (card, i) => {
@@ -102,6 +123,21 @@ class ProductsPage extends Component {
           <Button onClick={() => this.handleClose(i)}>Close</Button>
         </Modal.Footer>
       </Modal>
+    );
+  };
+
+  renderContent = () => {
+    return (
+      <MainLayout>
+        <div className="sort-wrap">{this.renderSelection()}</div>
+        <div className="cards-wrapper">{this.renderProductCard()}</div>
+        <div style={{ textAlign: 'center' }}>
+          <Pagination
+            items={this.state.pageItems}
+            onChangePage={this.onChangePage}
+          />
+        </div>
+      </MainLayout>
     );
   };
 

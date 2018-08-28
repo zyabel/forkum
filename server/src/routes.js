@@ -7,7 +7,7 @@ const firebase = admin.database().ref();
 const firebaseMiddleware = require('express-firebase-middleware');
 
 router.use((req, res, next) => {
-    next();
+  next();
 });
 
 router.use('/api', firebaseMiddleware.auth);
