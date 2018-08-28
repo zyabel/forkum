@@ -25,6 +25,7 @@ class ProductsPage extends Component {
     this.onChangePage = this.onChangePage.bind(this);
 
     this.state = {
+      i: {},
       pageItems: this.props.cards,
       pageOfItems: this.props.cards.cards,
     };
@@ -39,15 +40,15 @@ class ProductsPage extends Component {
   }
 
   handleClose(i) {
-    const newState = this.state;
+    const newState = this.state.i;
     newState[i] = false;
-    this.setState({ ...this.state, newState });
+    this.setState({ ...this.state.i, newState });
   }
 
   handleShow(i) {
-    const newState = this.state;
+    const newState = this.state.i;
     newState[i] = true;
-    this.setState({ ...this.state, newState });
+    this.setState({ ...this.state.i, newState });
   }
 
   renderProductCard() {
