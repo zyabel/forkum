@@ -35,6 +35,7 @@ class ProductsPage extends Component {
       i: {},
       pageItems: this.props.cards,
       pageOfItems: this.props.cards.cards,
+      value: '',
     };
   }
 
@@ -85,16 +86,23 @@ class ProductsPage extends Component {
       return card.title.includes(value);
     });
 
-    this.setState({
-      pageOfItems: filter,
-      pageItems: filter,
-    });
+    if (filter.length === 0) {
+      this.setState({
+        value: null,
+      });
+    } else {
+      this.setState({
+        pageOfItems: filter,
+        pageItems: filter,
+      });
+    }
   }
 
   reset() {
     this.setState({
       pageOfItems: this.props.product,
       pageItems: this.props.product,
+      value: '',
     });
   }
 
@@ -109,6 +117,9 @@ class ProductsPage extends Component {
             id="search"
             onChange={this.handleChange}
           />
+          {this.state.value === null ? (
+            <p>Нет совпадений, попробуйте еще раз.</p>
+          ) : null}
           <Button bsStyle="primary" onClick={this.dataSearch}>
             Find
           </Button>
