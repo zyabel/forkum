@@ -43,40 +43,21 @@ class HomePage extends Component {
             );
           })}
         </Carousel>
-        <Jumbotron
-          style={{ padding: '40px', margin: '20px 0', borderRadius: '10px' }}
-        >
-          <h2>LOREM MEM</h2>
-          <p>
-            {' '}
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
-            tempore odio, consectetur magnam, quo quia officia, voluptates
-            similique vero eos possimus dignissimos? Quaerat consectetur odio et
-            deleniti quam? Porro, molestias! Lorem ipsum, dolor sit amet
-            consectetur adipisicing elit. Laudantium tempore odio, consectetur
-            magnam, quo quia officia, voluptates similique vero eos possimus
-            dignissimos? Quaerat consectetur odio et deleniti quam? Porro,
-            molestias!
-          </p>
-          <Button bsStyle="primary">Read more</Button>
-        </Jumbotron>
-        <Jumbotron
-          style={{ padding: '40px', margin: '20px 0', borderRadius: '10px' }}
-        >
-          <h2>LOREM MEM</h2>
-          <p>
-            {' '}
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
-            tempore odio, consectetur magnam, quo quia officia, voluptates
-            similique vero eos possimus dignissimos? Quaerat consectetur odio et
-            deleniti quam? Porro, molestias! Lorem ipsum, dolor sit amet
-            consectetur adipisicing elit. Laudantium tempore odio, consectetur
-            magnam, quo quia officia, voluptates similique vero eos possimus
-            dignissimos? Quaerat consectetur odio et deleniti quam? Porro,
-            molestias!
-          </p>
-          <Button bsStyle="primary">Read more</Button>
-        </Jumbotron>
+        {this.props.data.actions.map((action, i) => {
+          return (
+            <Jumbotron
+              key={i}
+              style={{
+                padding: '40px',
+                margin: '20px 0',
+                borderRadius: '10px',
+              }}
+            >
+              <h2 style={{ fontStyle: 'italic' }}>{action.title}</h2>
+              <p> {action.text}</p>
+            </Jumbotron>
+          );
+        })}
       </MainLayout>
     );
   };
